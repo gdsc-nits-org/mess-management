@@ -1,14 +1,3 @@
-# React-JS-App Template v1.0.0
-GDSC NIT Silchar's Template for a JS + React + SASS app.
-
-## Features, Tools and Technologies
-- JavaScript
-- React 18
-- React Router 6
-- SASS Modules
-- Vite
-- pnpm
-- Prettier
-- Very Strict ESLint
-- Auto Lint and Pretty on commit using simple-git-hooks (compatible with Windows unlike husky)
-- Deploy preview on all PRs (creates an extra gh-pages branch)
+# Mess Management App
+WIP. Mess management app makes your life in hostels way easier by packing everything you need to enquire about your current mess's status under one single website.<br/><br/>
+![Version](https://img.shields.io/github/package-json/v/gdsc-nits-org/mess-management)
