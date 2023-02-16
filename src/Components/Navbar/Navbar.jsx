@@ -1,4 +1,4 @@
-import Navbutton from "./Navbutton";
+import Navbutton from "./NavButton";
 import styles from "./Navbar.module.scss";
 const Pages = [
   { name: "Home", path: "/" },
