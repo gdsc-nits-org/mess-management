@@ -1,0 +1,41 @@
+$base-color: green;
+$grey: grey;
+nav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-inline: 1%;
+}
+
+.header1 {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+}
+.header2 {
+  margin-right: 2%;
+  margin-left: auto;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mm {
+  margin: 0.5rem;
+  background-color: white;
+  color: $base-color;
+}
+.user {
+  float: right;
+  font-weight: 300;
+  color: $grey;
+}
