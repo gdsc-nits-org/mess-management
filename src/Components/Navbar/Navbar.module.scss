@@ -39,3 +39,21 @@ nav {
   font-weight: 300;
   color: $grey;
 }
+
+.navbutton {
+  border: none;
+  width: inherit;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+  transition: 0.6s ease-in-out;
+  background-color: green;
+  a:hover & {
+    color: green;
+    background-color: white;
+  }
+}
+a {
+  width: 100%;
+}
