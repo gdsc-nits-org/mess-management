@@ -1,11 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import styles from "./Card.module.scss";
-const Card = (props) => {
-  const { text } = props;
-  const { img } = props;
-  const { active } = props;
-  const { date } = props;
+const Card = ({ text, img, active, date }) => {
   return (
     <div className={styles.card}>
       <img src={img} style={{ display: active }} alt="on" />
