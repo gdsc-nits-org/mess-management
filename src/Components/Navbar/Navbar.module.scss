@@ -1,7 +1,7 @@
 $base-color: green;
 $grey: grey;
 nav {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -52,6 +52,7 @@ nav {
   a:hover & {
     color: green;
     background-color: white;
+    cursor: pointer;
   }
 }
 a {
