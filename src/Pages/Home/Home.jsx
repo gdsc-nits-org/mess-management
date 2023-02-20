@@ -1,7 +1,6 @@
-import { Button } from "../../Components";
-import Input from "../../Components/Input/Input";
+import { Button, Input, Card } from "../../Components";
 import style from "./Home.module.scss";
-import Card from "../../Components/NoticeBoardCard/Card";
+//  Just Imported Components to show how to use them
 const Home = () => {
   return (
     <main className={style.home}>
