@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import styles from "./Notice.modules.scss";
+import styles from "./Notice.module.scss";
 import { Card } from "../../Components/index";
 
 const Notice = () => {
@@ -17,14 +17,23 @@ const Notice = () => {
     };
     fetchdata();
   }, []);
-  console.log(notice);
   return (
-    <div className={styles.container}>
-      {notice &&
-        notice.map(({ desp, summary, date }) => {
-          return <Card key={date} date={date} text={desp} summary={summary} />;
-        })}
-    </div>
+    <>
+      <div className={styles.heading}>Notice Board</div>
+      <div className={styles.container}>
+        {notice &&
+          notice.map((note) => {
+            return (
+              <Card
+                key={note.date}
+                date={note.createdAt}
+                text={note.desp}
+                summary={note.summary}
+              />
+            );
+          })}
+      </div>
+    </>
   );
 };
 

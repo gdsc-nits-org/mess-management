@@ -1,25 +1,20 @@
 .card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 2%;
-  width: 95vw;
-  margin: 2%;
-  height: 5rem;
+  margin-inline: 2%;
   border-radius: 2rem;
   background-color: rgb(251, 251, 251);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.Button {
-  margin-left: auto;
-}
-
 .text {
   margin: 2%;
 }
-
 .img {
+  cursor: pointer;
   margin: 1%;
 }
-
 .date {
   color: green;
   margin: 1%;
