@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./Components";
-import { Home } from "./Pages";
+import { Home, TimeTable } from "./Pages";
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/timetable" element={<TimeTable />} />
       </Routes>
     </>
   );
