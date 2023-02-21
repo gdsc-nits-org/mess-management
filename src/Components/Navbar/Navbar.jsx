@@ -1,4 +1,4 @@
-import Navbutton from "./Navbutton";
+import NavButton from "./NavButton";
 import styles from "./Navbar.module.scss";
 const Pages = [
   { name: "Home", path: "/" },
@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="navbar">
         <nav>
           {Pages.map((item) => (
-            <Navbutton name={item.name} link={item.path} />
+            <NavButton name={item.name} link={item.path} />
           ))}
         </nav>
       </div>
