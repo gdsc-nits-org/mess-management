@@ -1,8 +1,8 @@
 import styles from "./Button.module.scss";
 
-const Button = ({ type }) => {
+const Button = (props) => {
   return (
-    <button type={type} className={`${styles.btn} ${styles["btn-large"]}`}>
+    <button className={styles[props.type]} onClick={props.onClick}>
       Button
     </button>
   );
