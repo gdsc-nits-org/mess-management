@@ -17,9 +17,23 @@ const Notice = () => {
     };
     fetchdata();
   }, []);
+  console.log(notice);
   return (
     <>
       <div className={styles.heading}>Notice Board</div>
+      <div className={styles.dropdown}>
+        <select name="sort" id="sort">
+          <option className={styles.text} value="All Notices" selected>
+            All Notices
+          </option>
+          <option className={styles.text} value="New Notices">
+            New Notices
+          </option>
+          <option className={styles.text} value="Bookmarked Notices">
+            Bookmarked Notices
+          </option>
+        </select>
+      </div>
       <div className={styles.container}>
         {notice &&
           notice.map((note) => {

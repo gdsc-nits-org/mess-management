@@ -17,3 +17,16 @@
   font-size: 1.8rem;
   font-weight: 900;
 }
+.dropdown {
+  display: flex;
+  justify-content: flex-start;
+  margin: 3rem 0 0 8rem;
+  select {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    font-family: var(--gdsc-font-2);
+    color: var(--green-heading);
+    border: none;
+  }
+}
