@@ -1,0 +1,45 @@
+.table {
+  border: 1px solid blue;
+
+  margin: 40px 0;
+  width: 60vw;
+}
+thead {
+  background-color: rgb(165, 220, 165);
+  color: rgb(24, 135, 24);
+}
+tbody {
+  font-weight: bold;
+  text-align: center;
+}
+h1 {
+  color: rgb(24, 135, 24);
+}
+
+.submit {
+  margin-left: 70vw;
+  background-color: rgb(24, 135, 24);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 2px;
+}
+.form_info {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 30vw 30vw;
+  grid-row-gap: 10px;
+  grid-column-gap: 60px;
+}
+.input {
+  width: 40vw;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.newFeedback {
+  color: rgb(24, 135, 24);
+  font-weight: bold;
+}
