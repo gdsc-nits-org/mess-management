@@ -1,8 +1,8 @@
 import { useState } from "react";
 import MainContent from "./MainContent";
-import style from "./Form.module.scss";
+import style from "./Feedback.module.scss";
 
-export default function Form() {
+export default function Feedback() {
   const [formData, setFormData] = useState({
     topic: "",
     comments: "",
@@ -14,7 +14,33 @@ export default function Form() {
   const [postsOnTimings, setPostsOnTimings] = useState(0);
   const [postsOnMenu, setPostsOnMenu] = useState(0);
   const [postsOnOthers, setPostsOnOthers] = useState(0);
-  // console.log(formData.employment)
+
+  const options = [
+    {
+      label: "--Choose--",
+      value: "choose",
+    },
+    {
+      label: "Quality of Food",
+      value: "quality",
+    },
+    {
+      label: "Hygiene Issues",
+      value: "hygiene",
+    },
+    {
+      label: "Mess timings",
+      value: "timings",
+    },
+    {
+      label: "Change in mess menu",
+      value: "menu",
+    },
+    {
+      label: "Others",
+      value: "others",
+    },
+  ];
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -25,40 +51,50 @@ export default function Form() {
       };
     });
   }
-  function handleSubmit(event) {
-    event.preventDefault();
 
+  function handleSubmit(type, event) {
+    event.preventDefault();
     setFormData({
       topic: "",
       comments: "",
       receiver: "",
     });
-
-    setSelected("--choose--");
-    switch (selected) {
-      case "quality":
-        setPostsOnQuality(postsOnQuality + 1);
-        break;
-
-      case "hygiene":
-        setPostsOnHygiene(postsOnHygiene + 1);
-        break;
-
-      case "timings":
-        setPostsOnTimings(postsOnTimings + 1);
-        break;
-
-      case "menu":
-        setPostsOnMenu(postsOnMenu + 1);
-        break;
-
-      case "others":
-        setPostsOnOthers(postsOnOthers + 1);
-        break;
-      default:
-        break;
-    }
+    setSelected("--Choose--");
+    const posts = {
+      quality: setPostsOnQuality(postsOnQuality + 1),
+      hygiene: setPostsOnHygiene(postsOnHygiene + 1),
+      timings: setPostsOnTimings(postsOnTimings + 1),
+      menu: setPostsOnMenu(postsOnMenu + 1),
+      others: setPostsOnOthers(postsOnOthers + 1),
+    };
+    return posts[type];
   }
+
+  //   setSelected("--Choose--");
+  //   switch (selected) {
+  //     case "quality":
+  //       setPostsOnQuality(postsOnQuality + 1);
+  //       break;
+
+  //     case "hygiene":
+  //       setPostsOnHygiene(postsOnHygiene + 1);
+  //       break;
+
+  //     case "timings":
+  //       setPostsOnTimings(postsOnTimings + 1);
+  //       break;
+
+  //     case "menu":
+  //       setPostsOnMenu(postsOnMenu + 1);
+  //       break;
+
+  //     case "others":
+  //       setPostsOnOthers(postsOnOthers + 1);
+  //       break;
+  //     default:
+  //       break;
+  //   }
+
   return (
     <>
       <MainContent
@@ -118,16 +154,13 @@ export default function Form() {
               value={selected}
               onChange={(e) => setSelected(e.target.value)}
             >
-              <option value="choose">--Choose--</option>
-              <option value="quality">Quality of food</option>
-              <option value="hygiene">Hygiene issues</option>
-              <option value="timings">Mess timings</option>
-              <option value="menu">Change in mess menu</option>
-              <option value="others">Others</option>
+              {options.map((option) => (
+                <option value={option.value}>{option.label}</option>
+              ))}
             </select>
           </div>
 
-          <button className={style.submit} onClick={handleSubmit}>
+          <button className={style.submit} onClick={handleSubmit.bind(selected)}>
             Submit
           </button>
         </fieldset>

@@ -1,24 +1,7 @@
-.table {
-  border: 1px solid blue;
-
-  margin: 40px 0;
-  width: 60vw;
-}
-thead {
-  background-color: rgb(165, 220, 165);
-  color: rgb(24, 135, 24);
-}
-tbody {
-  font-weight: bold;
-  text-align: center;
-}
-h1 {
-  color: rgb(24, 135, 24);
-}
-
+$primary_color: rgb(24, 135, 24);
 .submit {
   margin-left: 70vw;
-  background-color: rgb(24, 135, 24);
+  background-color: $primary_color;
   font-weight: bold;
   padding: 10px;
   border-radius: 14px;
@@ -40,6 +23,6 @@ h1 {
 }
 
 .newFeedback {
-  color: rgb(24, 135, 24);
+  color: $primary_color;
   font-weight: bold;
 }
