@@ -1,9 +1,10 @@
-$green: green;
+$base-color: #2da4f9;
+$white: white;
 
 .primary {
   outline: none;
   border: 0.2rem solid var(--theme-1-100);
-  background-color: $green;
+  background-color: $base-color;
   width: 7rem;
   height: 3rem;
   border-radius: 2rem;
@@ -12,11 +13,11 @@ $green: green;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: $white;
 }
 .secondary {
   outline: none;
-  border: 0.1rem solid $green;
+  border: 0.1rem solid $base-color;
   background-color: transparent;
   width: 7rem;
   height: 3rem;
@@ -26,5 +27,5 @@ $green: green;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $green;
+  color: $base-color;
 }

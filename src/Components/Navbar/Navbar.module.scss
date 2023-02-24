@@ -1,5 +1,9 @@
-$base-color: #09753c;
+$base-color: #2da4f9;
+$grey-blue: #7193bc;
+$light-blue: #effaff;
+$light-green: #e6f4f1;
 $grey: grey;
+$white: white;
 nav {
   margin: 0.5%;
   display: flex;
@@ -30,7 +34,7 @@ nav {
 
 .mm {
   margin: 0.5rem;
-  background-color: white;
+  background-color: $white;
   color: $base-color;
 }
 .user {
@@ -44,12 +48,12 @@ nav {
   font-weight: 600;
   font-size: 1.5rem;
   padding: 1rem;
-  color: white;
+  color: $white;
   transition: 0.6s ease-in-out;
   background-color: $base-color;
   a:hover & {
     color: $base-color;
-    background-color: white;
+    background-color: $white;
   }
 }
 a {
