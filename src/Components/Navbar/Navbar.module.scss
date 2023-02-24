@@ -31,7 +31,7 @@ nav {
 .mm {
   margin: 0.5rem;
   background-color: $white;
-  color: $base-color;
+  color: var(--base-color);
 }
 .user {
   font-weight: 300;
@@ -46,9 +46,9 @@ nav {
   padding: 1rem;
   color: $white;
   transition: 0.6s ease-in-out;
-  background-color: $base-color;
+  background-color: var(--base-color);
   a:hover & {
-    color: $base-color;
+    color: var(--base-color);
     background-color: $white;
   }
 }
