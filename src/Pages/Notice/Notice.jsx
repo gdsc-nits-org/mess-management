@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./Notice.module.scss";
-import { Card } from "../../Components";
+import { Card, SearchBar } from "../../Components";
 
 const Notice = () => {
   const [notice, setNotice] = useState([]);
@@ -17,10 +17,12 @@ const Notice = () => {
     };
     fetchdata();
   }, []);
-  console.log(notice);
   return (
     <>
       <div className={styles.heading}>Notice Board</div>
+      <div className={styles.searchBarC}>
+        <SearchBar />
+      </div>
       <div className={styles.dropdown}>
         <select name="sort" id="sort">
           <option className={styles.text} value="All Notices" selected>
@@ -34,19 +36,23 @@ const Notice = () => {
           </option>
         </select>
       </div>
-      <div className={styles.container}>
-        {notice &&
-          notice.map((note) => {
-            return (
-              <Card
-                key={note.createdAt}
-                date={note.createdAt}
-                text={note.desp}
-                summary={note.summary}
-              />
-            );
-          })}
-      </div>
+      {error ? (
+        <div>error</div>
+      ) : (
+        <div className={styles.container}>
+          {notice &&
+            notice.map((note) => {
+              return (
+                <Card
+                  key={note.createdAt}
+                  date={note.createdAt}
+                  text={note.desp}
+                  summary={note.summary}
+                />
+              );
+            })}
+        </div>
+      )}
     </>
   );
 };

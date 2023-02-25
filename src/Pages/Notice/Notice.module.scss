@@ -7,9 +7,14 @@
   flex-direction: column;
   justify-content: center;
 }
+.searchBarC {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
 .heading {
   font-family: var(--gdsc-font-2);
-  color: var(--green-heading);
+  color: var(--base-color);
   letter-spacing: 0.07em;
   display: flex;
   justify-content: flex-start;
@@ -27,15 +32,16 @@
   }
   select {
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 0.07em;
-    font-family: var(--gdsc-font-2);
+    font-family: var(--base-color);
     color: #2da3fa;
     border: none;
     outline: none;
   }
   option {
-    background-color: #effafe;
+    background-color: var(--drop-background);
+    margin: 2rem !important;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -47,5 +53,8 @@
   }
   .dropdown {
     margin: 3rem 0 0 1rem;
+  }
+  .searchBarC {
+    margin-right: 0;
   }
 }

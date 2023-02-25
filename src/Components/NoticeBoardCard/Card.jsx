@@ -27,12 +27,9 @@ const Card = ({ text, date }) => {
       <div className={styles.date}>
         {formatDistanceToNow(new Date(date), { addSuffix: true })}
       </div>
-      <Button
-        handleOpen={handleOpen}
-        className={styles.Button}
-        text="open"
-        type="primary"
-      />
+      <Button onClick={handleOpen} className={styles.Button} type="primary">
+        Open
+      </Button>
       {modal && <NoticeModal />}
     </div>
   );

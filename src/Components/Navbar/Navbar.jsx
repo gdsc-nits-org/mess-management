@@ -1,6 +1,9 @@
 import NavButton from "./NavButton";
 import styles from "./Navbar.module.scss";
-const Pages = [{ name: "Home", path: "/" }];
+const Pages = [
+  { name: "Home", path: "/" },
+  { name: "Notice", path: "/notice" },
+];
 
 const Navbar = () => {
   return (

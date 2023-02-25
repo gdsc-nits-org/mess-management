@@ -16,6 +16,7 @@ const Input = (props) => {
         backgroundColor: bgColor,
         color: textColor,
       }}
+      placeholder={props.placeholder}
       type={type}
       value={value}
       onChange={(val) => setVal(val.target.value)}
