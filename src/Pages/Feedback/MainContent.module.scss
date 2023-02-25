@@ -3,12 +3,12 @@ $secondary_color: rgb(165, 220, 165);
 
 h1 {
   color: $primary_color;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 img {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .thead {
   background-color: $secondary_color;
@@ -20,6 +20,6 @@ img {
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-columns: auto auto auto;
   border: 1px solid blue;
-  margin-bottom: 20px;
-  width: 60vw;
+  margin-bottom: 1.25rem;
+  width: 70vw;
 }

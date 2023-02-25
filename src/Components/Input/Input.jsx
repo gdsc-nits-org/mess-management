@@ -6,6 +6,7 @@ const Input = (props) => {
   const { bgColor } = props;
   const { textColor } = props;
   const { type } = props;
+
   const [value, setVal] = useState(props.value);
   return (
     <input
@@ -18,7 +19,9 @@ const Input = (props) => {
       }}
       type={type}
       value={value}
-      onChange={(val) => setVal(val.target.value)}
+      onChange={(val) => {
+        setVal(val.target.value);
+      }}
     />
   );
 };

@@ -1,6 +1,6 @@
 import style from "./MainContent.module.scss";
 
-export default function MainContent(props) {
+const MainContent = (props) => {
   const { postsOnHygiene, postsOnMenu, postsOnOthers, postsOnQuality, postsOnTimings } =
     props;
 
@@ -74,4 +74,5 @@ export default function MainContent(props) {
       </div>
     </div>
   );
-}
+};
+export default MainContent;

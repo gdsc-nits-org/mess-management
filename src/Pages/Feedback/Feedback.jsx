@@ -1,8 +1,9 @@
 import { useState } from "react";
 import MainContent from "./MainContent";
+import { Input, Button } from "../../Components";
 import style from "./Feedback.module.scss";
 
-export default function Feedback() {
+const Feedback = () => {
   const [formData, setFormData] = useState({
     topic: "",
     comments: "",
@@ -14,6 +15,8 @@ export default function Feedback() {
   const [postsOnTimings, setPostsOnTimings] = useState(0);
   const [postsOnMenu, setPostsOnMenu] = useState(0);
   const [postsOnOthers, setPostsOnOthers] = useState(0);
+  const [change, setChange] = useState("");
+  const [change1, setChange1] = useState("");
 
   const options = [
     {
@@ -42,7 +45,7 @@ export default function Feedback() {
     },
   ];
 
-  function handleChange(event) {
+  const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => {
       return {
@@ -50,50 +53,44 @@ export default function Feedback() {
         [name]: value,
       };
     });
-  }
+  };
 
-  function handleSubmit(type, event) {
+  const handleSubmit = (event) => {
     event.preventDefault();
     setFormData({
       topic: "",
       comments: "",
       receiver: "",
     });
+    setChange("");
+    setChange1("");
+
     setSelected("--Choose--");
-    const posts = {
-      quality: setPostsOnQuality(postsOnQuality + 1),
-      hygiene: setPostsOnHygiene(postsOnHygiene + 1),
-      timings: setPostsOnTimings(postsOnTimings + 1),
-      menu: setPostsOnMenu(postsOnMenu + 1),
-      others: setPostsOnOthers(postsOnOthers + 1),
-    };
-    return posts[type];
-  }
+    switch (selected) {
+      case "quality":
+        setPostsOnQuality(postsOnQuality + 1);
+        break;
 
-  //   setSelected("--Choose--");
-  //   switch (selected) {
-  //     case "quality":
-  //       setPostsOnQuality(postsOnQuality + 1);
-  //       break;
+      case "hygiene":
+        setPostsOnHygiene(postsOnHygiene + 1);
+        break;
 
-  //     case "hygiene":
-  //       setPostsOnHygiene(postsOnHygiene + 1);
-  //       break;
+      case "timings":
+        setPostsOnTimings(postsOnTimings + 1);
+        break;
 
-  //     case "timings":
-  //       setPostsOnTimings(postsOnTimings + 1);
-  //       break;
+      case "menu":
+        setPostsOnMenu(postsOnMenu + 1);
+        break;
 
-  //     case "menu":
-  //       setPostsOnMenu(postsOnMenu + 1);
-  //       break;
+      case "others":
+        setPostsOnOthers(postsOnOthers + 1);
+        break;
 
-  //     case "others":
-  //       setPostsOnOthers(postsOnOthers + 1);
-  //       break;
-  //     default:
-  //       break;
-  //   }
+      default:
+        break;
+    }
+  };
 
   return (
     <>
@@ -118,53 +115,36 @@ export default function Feedback() {
           </legend>
           <label htmlFor="topic">Feedback Topic</label>
           <br />
-          <input
-            className={style.input}
-            type="text"
-            placeholder="Topic"
-            onChange={handleChange}
-            name="topic"
-            value={formData.topic}
-          />
+          <Input width="40vw" height="40px" value={change} setVal={setChange} />
           <br />
-
           <textarea
             rows="10"
             className={style.input}
-            value={formData.comments}
             placeholder="Comments"
-            onChange={handleChange}
             name="comments"
+            value={formData.comments}
+            onChange={handleChange}
           />
-          <br />
           <div className={style.form_info}>
             <label htmlFor="receiver">Feedback addressed to</label>
             <label htmlFor="feedbackType">Feedback Type</label>
 
-            <input
-              type="text"
-              placeholder="Feedback addressed to"
-              onChange={handleChange}
-              name="receiver"
-              value={formData.receiver}
-            />
+            <Input width="30vw" height="40px" value={change1} setVal={setChange1} />
 
             <select
               className={style.feedbackType}
               value={selected}
               onChange={(e) => setSelected(e.target.value)}
             >
-              {options.map((option) => (
-                <option value={option.value}>{option.label}</option>
-              ))}
+              {options.map((op) => {
+                return <option value={op.value}>{op.label}</option>;
+              })}
             </select>
           </div>
-
-          <button className={style.submit} onClick={handleSubmit.bind(selected)}>
-            Submit
-          </button>
+          <Button onClick={handleSubmit} type="primary" text="Submit" />
         </fieldset>
       </form>
     </>
   );
-}
+};
+export default Feedback;
