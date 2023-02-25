@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import style from "./TimeTable.module.scss";
+import style from "./Contents.module.scss";
 
 const Dishes = ({ menu }) => {
   return (
