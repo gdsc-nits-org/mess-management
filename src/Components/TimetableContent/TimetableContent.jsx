@@ -1,7 +1,7 @@
 import Dishes from "./Dishes";
-import style from "./Contents.module.scss";
+import style from "./TimetableContent.module.scss";
 
-const Contents = ({ data, err }) => {
+const TimetableContent = ({ data, err }) => {
   if (err) {
     return <div>{err}</div>;
   }
@@ -26,4 +26,4 @@ const Contents = ({ data, err }) => {
   );
 };
 
-export default Contents;
+export default TimetableContent;

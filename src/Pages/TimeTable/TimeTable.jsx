@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Contents } from "../../Components";
+import { TimetableContent } from "../../Components";
 import style from "./TimeTable.module.scss";
 
 const TimeTable = () => {
@@ -24,7 +24,7 @@ const TimeTable = () => {
           <th>Snacks</th>
           <th className={style.radius2}>Dinner</th>
         </tr>
-        <Contents data={data} err={err} />
+        <TimetableContent data={data} err={err} />
       </table>
     </div>
   );
