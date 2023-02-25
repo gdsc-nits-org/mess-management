@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./Notice.module.scss";
-import { Card } from "../../Components/index";
+import { Card } from "../../Components";
 
 const Notice = () => {
   const [notice, setNotice] = useState([]);
-
+  const [error, setError] = useState("");
   useEffect(() => {
     const fetchdata = async () => {
       try {
         const { data: response } = await axios.get("http://localhost:5000/api/v1/notice");
         setNotice(response);
-      } catch (error) {
-        console.log(error);
+      } catch (err) {
+        setError(`${err.message}`);
       }
     };
     fetchdata();
@@ -39,7 +39,7 @@ const Notice = () => {
           notice.map((note) => {
             return (
               <Card
-                key={note.date}
+                key={note.createdAt}
                 date={note.createdAt}
                 text={note.desp}
                 summary={note.summary}

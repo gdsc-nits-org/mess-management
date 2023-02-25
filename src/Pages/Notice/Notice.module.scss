@@ -21,12 +21,31 @@
   display: flex;
   justify-content: flex-start;
   margin: 3rem 0 0 8rem;
+  &:hover,
+  :focus {
+    border: none;
+  }
   select {
     font-size: 1rem;
     font-weight: 900;
     letter-spacing: 0.07em;
     font-family: var(--gdsc-font-2);
-    color: var(--green-heading);
+    color: #2da3fa;
     border: none;
+    outline: none;
+  }
+  option {
+    background-color: #effafe;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    margin-inline: 1%;
+  }
+  .heading {
+    justify-content: center;
+  }
+  .dropdown {
+    margin: 3rem 0 0 1rem;
   }
 }

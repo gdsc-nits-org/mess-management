@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { formatDistanceToNow } from "date-fns";
 import Button from "../Button/Button";
 import styles from "./Card.module.scss";
-import open from "../../assests/bookmark(open).svg";
-import closed from "../../assests/bookmark(closed).svg";
+import open from "../../assets/bookmark(open).svg";
+import closed from "../../assets/bookmark(closed).svg";
 import NoticeModal from "./NoticeModal";
 const Card = ({ text, date }) => {
   const [active, setActive] = useState(false);

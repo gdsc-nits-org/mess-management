@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
   padding: 2%;
   margin-inline: 2%;
   border-radius: 2rem;
@@ -13,9 +14,21 @@
 }
 .img {
   cursor: pointer;
+  width: 30px;
   margin: 1%;
 }
 .date {
   color: green;
   margin: 1%;
+}
+@media only screen and (max-width: 500px) {
+  .date {
+    font-size: 0.5rem;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
+  .img {
+    margin: unset;
+  }
 }
