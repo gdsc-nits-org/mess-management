@@ -1,3 +1,3 @@
 import Home from "./Home/Home";
-import Notice from "./Notice/Notice";
-export { Home, Notice };
+import Nutrients from "./Nutrients/Nutrients";
+export { Home, Nutrients };

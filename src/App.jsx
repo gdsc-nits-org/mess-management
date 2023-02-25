@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./Components";
-import { Home, Notice } from "./Pages";
+import { Home, Nutrients } from "./Pages";
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/notice" element={<Notice />} />
+        <Route path="/nutrients" element={<Nutrients />} />
       </Routes>
     </>
   );

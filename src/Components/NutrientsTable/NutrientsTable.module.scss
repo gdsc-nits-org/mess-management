@@ -1,0 +1,29 @@
+$grey: grey;
+$red: red;
+
+.tableSection {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 65px;
+  width: 70%;
+  margin: 65px auto;
+  padding: 18px;
+  align-items: center;
+  font-weight: 500;
+  border-left: 2px solid $grey;
+  border-right: 2px solid $grey;
+}
+
+.tableSection1 {
+  width: 320px;
+}
+.tableSection2 {
+  width: 320px;
+}
+.tableSection3 {
+  width: 500px;
+}
+.tableSection4 {
+  width: 500px;
+}
