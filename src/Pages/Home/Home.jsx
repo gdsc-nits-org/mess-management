@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <main className={style.home}>
       <h1>Home Page</h1>
-      <Button type="primary" />
-      <Button type="secondary" />
+      <Button text="Button" type="primary" />
+      <Button text="Button" type="secondary" />
       <Input type="text" value="ok" />
     </main>
   );
