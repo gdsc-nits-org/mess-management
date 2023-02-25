@@ -1,18 +1,7 @@
-import { useState, useEffect } from "react";
 import Dishes from "./Dishes";
 import style from "./Contents.module.scss";
 
-const Contents = () => {
-  const [data, setData] = useState([]);
-  const [err, setErr] = useState(null);
-
-  useEffect(() => {
-    fetch("data/timetabledata.json")
-      .then((res) => res.json())
-      .then((content) => setData(content))
-      .catch((error) => setErr(error.name));
-  }, []);
-
+const Contents = ({ data, err }) => {
   if (err) {
     return <div>{err}</div>;
   }
