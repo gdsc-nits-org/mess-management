@@ -1,14 +1,6 @@
 import NavButton from "./NavButton";
 import styles from "./Navbar.module.scss";
-const Pages = [
-  { name: "Home", path: "/" },
-  { name: "MMC", path: "/MMC" },
-  { name: "Bill", path: "/Bill" },
-  { name: "Token", path: "/Token" },
-  { name: "Nutrients", path: "/Nutrients" },
-  { name: "Feedback", path: "/Feedback" },
-  { name: "Mail", path: "/Mail" },
-];
+const Pages = [{ name: "Home", path: "/" }];
 
 const Navbar = () => {
   return (
@@ -23,13 +15,11 @@ const Navbar = () => {
           <h1 className={styles.user}>Username</h1>
         </div>
       </div>
-      <div className="navbar">
-        <nav>
-          {Pages.map((item) => (
-            <NavButton name={item.name} link={item.path} />
-          ))}
-        </nav>
-      </div>
+      <nav>
+        {Pages.map((item) => (
+          <NavButton name={item.name} link={item.path} />
+        ))}
+      </nav>
     </>
   );
 };
