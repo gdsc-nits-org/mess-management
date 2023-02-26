@@ -21,13 +21,15 @@ const SearchBar = (props) => {
           width="30"
           height="30"
         />
-        <Icon
-          onClick={props.calender}
-          icon="uis:calender"
-          color="#2da4f9"
-          width="30"
-          height="30"
-        />
+        {props.calender && (
+          <Icon
+            onClick={props.onClick2}
+            icon="uis:calender"
+            color="#2da4f9"
+            width="28"
+            height="28"
+          />
+        )}
       </div>
     </div>
   );

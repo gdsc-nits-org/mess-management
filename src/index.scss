@@ -9,7 +9,7 @@
   --gdsc-blue-2-100: #4285f4;
   --gdsc-blue-3-100: #547dbf;
 
-  --green-heading: #09753c;
+  --gdsc-green-1-100: #09753c;
 
   --gdsc-red-1-100: #db3236;
   --gdsc-red-2-100: #f0766c;
@@ -44,6 +44,5 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--gdsc-font-1);
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
