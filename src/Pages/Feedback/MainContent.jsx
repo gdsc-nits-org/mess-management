@@ -4,7 +4,6 @@ const MainContent = (props) => {
   const { postsOnHygiene, postsOnMenu, postsOnOthers, postsOnQuality, postsOnTimings } =
     props;
 
-  
   return (
     <div>
       <h1>Feedback</h1>
@@ -12,7 +11,7 @@ const MainContent = (props) => {
       <div className={style.grid}>
         <p className={style.thead}>
           <img
-            src="https://cdn.vectorstock.com/i/1000x1000/40/16/check-list-icon-green-vector-19784016.webp"
+            src="https://png.pngtree.com/png-clipart/20220615/original/pngtree-checklist-icon-blue-vector-isolated-on-white-background-png-image_8058567.png"
             alt="checklist"
           />
           Topics
@@ -21,9 +20,8 @@ const MainContent = (props) => {
         <p className={style.thead}>Last Post</p>
 
         <p>
-          {" "}
           <img
-            src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-green-check-mark-icon-flat-style-vector-png-image_6109374.jpg"
+            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
             alt="checklist"
           />
           Quality of food
@@ -33,7 +31,7 @@ const MainContent = (props) => {
 
         <p>
           <img
-            src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-green-check-mark-icon-flat-style-vector-png-image_6109374.jpg"
+            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
             alt="checklist"
           />
           Hygiene issues
@@ -43,7 +41,7 @@ const MainContent = (props) => {
 
         <p>
           <img
-            src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-green-check-mark-icon-flat-style-vector-png-image_6109374.jpg"
+            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
             alt="checklist"
           />
           Mess timings
@@ -52,9 +50,8 @@ const MainContent = (props) => {
         <p>1 month ago</p>
 
         <p>
-          {" "}
           <img
-            src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-green-check-mark-icon-flat-style-vector-png-image_6109374.jpg"
+            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
             alt="checklist"
           />
           Change in mess menu
@@ -62,9 +59,8 @@ const MainContent = (props) => {
         <p>{postsOnMenu}</p>
         <p>2 weeks ago</p>
         <p>
-          {" "}
           <img
-            src="https://png.pngtree.com/png-clipart/20210321/original/pngtree-green-check-mark-icon-flat-style-vector-png-image_6109374.jpg"
+            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
             alt="checklist"
           />
           Others

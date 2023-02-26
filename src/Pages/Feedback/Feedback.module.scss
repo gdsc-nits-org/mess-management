@@ -1,14 +1,7 @@
-$primary_color: rgb(24, 135, 24);
-.submit {
-  margin-left: 70vw;
-  background-color: $primary_color;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 0.875rem;
-  cursor: pointer;
-  color: white;
-  margin-bottom: 2px;
-}
+$white: white;
+$base_color: #2da4f9;
+$secondary_color: #7193bc;
+
 .form_info {
   display: grid;
   grid-template-rows: auto auto;
@@ -23,7 +16,7 @@ $primary_color: rgb(24, 135, 24);
 }
 
 .newFeedback {
-  color: $primary_color;
+  color: $base_color;
   font-weight: bold;
 }
 

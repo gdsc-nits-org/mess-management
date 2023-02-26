@@ -1,7 +1,4 @@
 $white: white;
-$green: green;
-$primary_color: rgb(24, 135, 24);
-
 .primary {
   outline: none;
   border: 0.2rem solid var(--theme-1-100);
@@ -30,13 +27,3 @@ $primary_color: rgb(24, 135, 24);
   justify-content: center;
   color: var(--base-color);
 }
-// .submit {
-//   margin-left: 70vw;
-//   background-color: $primary_color;
-//   font-weight: bold;
-//   padding: 10px;
-//   border-radius: 0.875rem;
-//   cursor: pointer;
-//   color: white;
-//   margin-bottom: 2px;
-// }

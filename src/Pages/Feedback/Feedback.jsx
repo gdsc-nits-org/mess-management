@@ -106,7 +106,7 @@ const Feedback = () => {
         <fieldset>
           <legend className={style.newFeedback}>
             <img
-              src="https://cdn.vectorstock.com/i/1000x1000/40/16/check-list-icon-green-vector-19784016.webp"
+              src="https://png.pngtree.com/png-clipart/20220615/original/pngtree-checklist-icon-blue-vector-isolated-on-white-background-png-image_8058567.png"
               alt="checklist"
               width="20px"
               height="20px"

@@ -3,12 +3,8 @@ import styles from "./Navbar.module.scss";
 const Pages = [
   { name: "Home", path: "/" },
   { name: "Timetable", path: "/timetable" },
-  { name: "MMC", path: "/MMC" },
-  { name: "Bill", path: "/Bill" },
-  { name: "Token", path: "/Token" },
-  { name: "Nutrients", path: "/Nutrients" },
+
   { name: "Feedback", path: "/feedback" },
-  { name: "Mail", path: "/Mail" },
 ];
 
 const Navbar = () => {
