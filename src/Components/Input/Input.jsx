@@ -1,12 +1,15 @@
-import { useState } from "react";
 import styles from "./Input.module.scss";
 const Input = (props) => {
-  const { width } = props;
-  const { height } = props;
-  const { bgColor } = props;
-  const { textColor } = props;
-  const { type } = props;
-  const [value, setVal] = useState(props.value);
+  const {
+    width,
+    height,
+    bgColor,
+    textColor,
+    type,
+    searchValue,
+    setSearchValue,
+    placeholder,
+  } = props;
   return (
     <input
       className={styles.input}
@@ -16,10 +19,10 @@ const Input = (props) => {
         backgroundColor: bgColor,
         color: textColor,
       }}
-      placeholder={props.placeholder}
+      placeholder={placeholder}
       type={type}
-      value={value}
-      onChange={(val) => setVal(val.target.value)}
+      value={searchValue}
+      onChange={(val) => setSearchValue(val.target.value)}
     />
   );
 };

@@ -6,6 +6,7 @@ import { Card, SearchBar } from "../../Components";
 const Notice = () => {
   const [notice, setNotice] = useState([]);
   const [error, setError] = useState("");
+  const [searchValue, setSearchValue] = useState("");
   useEffect(() => {
     const fetchdata = async () => {
       try {
@@ -21,7 +22,13 @@ const Notice = () => {
     <>
       <div className={styles.heading}>Notice Board</div>
       <div className={styles.searchBarC}>
-        <SearchBar calender="true" width="15rem" height="2rem" />
+        <SearchBar
+          calender="true"
+          width="15rem"
+          height="2rem"
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
+        />
       </div>
       <div className={styles.dropdown}>
         <select name="sort" id="sort">

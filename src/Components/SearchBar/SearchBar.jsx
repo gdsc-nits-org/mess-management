@@ -9,8 +9,9 @@ const SearchBar = (props) => {
           width={props.width}
           height={props.height}
           type="text"
-          value=""
           placeholder="search here..."
+          searchValue={props.searchValue}
+          setSearchValue={props.setSearchValue}
         />
       </div>
       <div className={styles.iconC}>
