@@ -2,6 +2,7 @@ import NavButton from "./NavButton";
 import styles from "./Navbar.module.scss";
 const Pages = [
   { name: "Home", path: "/" },
+  { name: "Notice", path: "/notice" },
   { name: "Timetable", path: "/timetable" },
 ];
 

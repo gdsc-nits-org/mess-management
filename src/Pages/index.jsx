@@ -1,4 +1,4 @@
 import Home from "./Home/Home";
 import TimeTable from "./TimeTable/TimeTable";
-
-export { Home, TimeTable };
+import Notice from "./Notice/Notice";
+export { Home, Notice, TimeTable };
