@@ -1,30 +1,41 @@
 import { Icon } from "@iconify/react";
 import styles from "./SearchBar.module.scss";
 import Input from "../Input/Input";
-const SearchBar = (props) => {
+const SearchBar = ({
+  searchValue,
+  setSearchValue,
+  width,
+  height,
+  onClick,
+  onClick2,
+  calender,
+}) => {
+  const handleChange = (e) => {
+    setSearchValue(e.target.value);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.input}>
         <Input
-          width={props.width}
-          height={props.height}
+          width={width}
+          height={height}
           type="text"
           placeholder="search here..."
-          searchValue={props.searchValue}
-          setSearchValue={props.setSearchValue}
+          searchValue={searchValue}
+          onChange={handleChange}
         />
       </div>
       <div className={styles.iconC}>
         <Icon
-          onClick={props.onClick}
+          onClick={onClick}
           icon="material-symbols:search"
           color="#2da4f9"
           width="30"
           height="30"
         />
-        {props.calender && (
+        {calender && (
           <Icon
-            onClick={props.onClick2}
+            onClick={onClick2}
             icon="uis:calender"
             color="#2da4f9"
             width="28"
