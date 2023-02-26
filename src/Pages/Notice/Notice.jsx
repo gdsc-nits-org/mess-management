@@ -21,7 +21,7 @@ const Notice = () => {
     <>
       <div className={styles.heading}>Notice Board</div>
       <div className={styles.searchBarC}>
-        <SearchBar calender="true" />
+        <SearchBar calender="true" width="15rem" height="2rem" />
       </div>
       <div className={styles.dropdown}>
         <select name="sort" id="sort">

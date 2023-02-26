@@ -6,8 +6,8 @@ const SearchBar = (props) => {
     <div className={styles.container}>
       <div className={styles.input}>
         <Input
-          width="15rem"
-          height="2rem"
+          width={props.width}
+          height={props.height}
           type="text"
           value=""
           placeholder="search here..."
