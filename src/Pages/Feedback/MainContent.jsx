@@ -1,14 +1,17 @@
 import { Icon } from "@iconify/react";
 import style from "./MainContent.module.scss";
-
+import { SearchBar } from "../../Components";
 const MainContent = (props) => {
   const { postsOnHygiene, postsOnMenu, postsOnOthers, postsOnQuality, postsOnTimings } =
     props;
 
   return (
     <div>
-      <h1>Feedback</h1>
+      <div className={style.title}>
+        <p className={style.feedback}>Feedback</p>
 
+        <SearchBar />
+      </div>
       <div className={style.grid}>
         <p className={style.thead}>
           <Icon icon="octicon:checklist-16" width="20px" height="20px" />

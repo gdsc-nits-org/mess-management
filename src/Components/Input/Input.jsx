@@ -1,13 +1,7 @@
-import React, { useState } from "react";
 import styles from "./Input.module.scss";
 const Input = (props) => {
-  const { width } = props;
-  const { height } = props;
-  const { bgColor } = props;
-  const { textColor } = props;
-  const { type } = props;
+  const { width, height, bgColor, textColor, type, value, onChange, placeholder } = props;
 
-  const [value, setVal] = useState(props.value);
   return (
     <input
       className={styles.input}
@@ -17,11 +11,10 @@ const Input = (props) => {
         backgroundColor: bgColor,
         color: textColor,
       }}
+      placeholder={placeholder}
       type={type}
       value={value}
-      onChange={(val) => {
-        setVal(val.target.value);
-      }}
+      onChange={(e) => onChange(e)}
     />
   );
 };

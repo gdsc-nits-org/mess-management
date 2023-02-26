@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import MainContent from "./MainContent";
-import { Input, Button } from "../../Components";
+import { Input, Textarea, Button } from "../../Components";
 import style from "./Feedback.module.scss";
 
 const Feedback = () => {
@@ -13,6 +13,7 @@ const Feedback = () => {
   const [selected, setSelected] = useState("--Choose--");
   const [change, setChange] = useState("");
   const [change1, setChange1] = useState("");
+  const [change2, setChange2] = useState("");
   const [state, setState] = useState({
     postsOnQuality: 0,
     postsOnHygiene: 0,
@@ -48,16 +49,6 @@ const Feedback = () => {
     },
   ];
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => {
-      return {
-        ...prevFormData,
-        [name]: value,
-      };
-    });
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setFormData({
@@ -67,6 +58,7 @@ const Feedback = () => {
     });
     setChange("");
     setChange1("");
+    setChange2(formData.receiver);
 
     setSelected("--Choose--");
 
@@ -111,21 +103,31 @@ const Feedback = () => {
           </legend>
           <label htmlFor="topic">Feedback Topic</label>
           <br />
-          <Input width="40vw" height="40px" value={change} setVal={setChange} />
+          <Input
+            width="40vw"
+            height="40px"
+            value={change}
+            onChange={(e) => setChange(e.target.value)}
+          />
           <br />
-          <textarea
-            rows="10"
-            className={style.input}
+
+          <Textarea
+            width="870px"
+            height="140px"
+            value={change1}
+            onChange={(e) => setChange1(e.target.value)}
             placeholder="Comments"
-            name="comments"
-            value={formData.comments}
-            onChange={handleChange}
           />
           <div className={style.form_info}>
             <label htmlFor="receiver">Feedback addressed to</label>
             <label htmlFor="feedbackType">Feedback Type</label>
 
-            <Input width="30vw" height="40px" value={change1} setVal={setChange1} />
+            <Input
+              width="27vw"
+              height="40px"
+              value={change2}
+              onChange={(e) => setChange2(e.target.value)}
+            />
 
             <select
               className={style.feedbackType}
