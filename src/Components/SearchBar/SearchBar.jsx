@@ -21,7 +21,7 @@ const SearchBar = ({
           height={height}
           type="text"
           placeholder="search here..."
-          searchValue={searchValue}
+          value={searchValue}
           onChange={handleChange}
         />
       </div>

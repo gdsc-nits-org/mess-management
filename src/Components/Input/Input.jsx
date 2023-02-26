@@ -1,6 +1,6 @@
 import styles from "./Input.module.scss";
 const Input = (props) => {
-  const { width, height, bgColor, textColor, type, Value, onChange, placeholder } = props;
+  const { width, height, bgColor, textColor, type, value, onChange, placeholder } = props;
   return (
     <input
       className={styles.input}
@@ -12,7 +12,7 @@ const Input = (props) => {
       }}
       placeholder={placeholder}
       type={type}
-      value={Value}
+      value={value}
       onChange={(e) => onChange(e)}
     />
   );
