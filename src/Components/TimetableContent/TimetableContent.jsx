@@ -12,10 +12,10 @@ const TimetableContent = ({ data, err }) => {
         return (
           <tr className={style.content}>
             <th>{res.day}</th>
-            {res.dishes.map((response) => {
+            {res.dishes.map((dish) => {
               return (
                 <td>
-                  <Dishes menu={response} />
+                  <Dishes menu={dish} />
                 </td>
               );
             })}

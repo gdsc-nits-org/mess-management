@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import { useState } from "react";
 import MainContent from "./MainContent";
 import { Input, Button } from "../../Components";
@@ -10,13 +11,15 @@ const Feedback = () => {
     receiver: "",
   });
   const [selected, setSelected] = useState("--Choose--");
-  const [postsOnQuality, setPostsOnQuality] = useState(0);
-  const [postsOnHygiene, setPostsOnHygiene] = useState(0);
-  const [postsOnTimings, setPostsOnTimings] = useState(0);
-  const [postsOnMenu, setPostsOnMenu] = useState(0);
-  const [postsOnOthers, setPostsOnOthers] = useState(0);
   const [change, setChange] = useState("");
   const [change1, setChange1] = useState("");
+  const [state, setState] = useState({
+    postsOnQuality: 0,
+    postsOnHygiene: 0,
+    postsOnTimings: 0,
+    postsOnMenu: 0,
+    postsOnOthers: 0,
+  });
 
   const options = [
     {
@@ -66,51 +69,44 @@ const Feedback = () => {
     setChange1("");
 
     setSelected("--Choose--");
-    switch (selected) {
-      case "quality":
-        setPostsOnQuality(postsOnQuality + 1);
-        break;
 
-      case "hygiene":
-        setPostsOnHygiene(postsOnHygiene + 1);
-        break;
-
-      case "timings":
-        setPostsOnTimings(postsOnTimings + 1);
-        break;
-
-      case "menu":
-        setPostsOnMenu(postsOnMenu + 1);
-        break;
-
-      case "others":
-        setPostsOnOthers(postsOnOthers + 1);
-        break;
-
-      default:
-        break;
-    }
+    setState((prevState) => {
+      return {
+        ...prevState,
+        postsOnQuality:
+          selected === "quality"
+            ? prevState.postsOnQuality + 1
+            : prevState.postsOnQuality,
+        postsOnHygiene:
+          selected === "hygiene"
+            ? prevState.postsOnHygiene + 1
+            : prevState.postsOnHygiene,
+        postsOnTimings:
+          selected === "timings"
+            ? prevState.postsOnTimings + 1
+            : prevState.postsOnTimings,
+        postsOnMenu:
+          selected === "menu" ? prevState.postsOnMenu + 1 : prevState.postsOnMenu,
+        postsOnOthers:
+          selected === "others" ? prevState.postsOnOthers + 1 : prevState.postsOnOthers,
+      };
+    });
   };
 
   return (
     <>
       <MainContent
         select={selected}
-        postsOnQuality={postsOnQuality}
-        postsOnHygiene={postsOnHygiene}
-        postsOnTimings={postsOnTimings}
-        postsOnMenu={postsOnMenu}
-        postsOnOthers={postsOnOthers}
+        postsOnQuality={state.postsOnQuality}
+        postsOnHygiene={state.postsOnHygiene}
+        postsOnTimings={state.postsOnTimings}
+        postsOnMenu={state.postsOnMenu}
+        postsOnOthers={state.postsOnOthers}
       />
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend className={style.newFeedback}>
-            <img
-              src="https://png.pngtree.com/png-clipart/20220615/original/pngtree-checklist-icon-blue-vector-isolated-on-white-background-png-image_8058567.png"
-              alt="checklist"
-              width="20px"
-              height="20px"
-            />
+            <Icon icon="octicon:checklist-16" width="20px" height="20px" />
             Create New Feedback
           </legend>
           <label htmlFor="topic">Feedback Topic</label>
@@ -141,7 +137,9 @@ const Feedback = () => {
               })}
             </select>
           </div>
-          <Button onClick={handleSubmit} type="primary" text="Submit" />
+          <Button onClick={handleSubmit} type="primary">
+            Submit
+          </Button>
         </fieldset>
       </form>
     </>

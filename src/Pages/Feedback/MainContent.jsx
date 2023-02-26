@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import style from "./MainContent.module.scss";
 
 const MainContent = (props) => {
@@ -10,59 +11,41 @@ const MainContent = (props) => {
 
       <div className={style.grid}>
         <p className={style.thead}>
-          <img
-            src="https://png.pngtree.com/png-clipart/20220615/original/pngtree-checklist-icon-blue-vector-isolated-on-white-background-png-image_8058567.png"
-            alt="checklist"
-          />
+          <Icon icon="octicon:checklist-16" width="20px" height="20px" />
           Topics
         </p>
         <p className={style.thead}>No. of Posts</p>
         <p className={style.thead}>Last Post</p>
 
         <p>
-          <img
-            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
-            alt="checklist"
-          />
+          <Icon icon="mdi:tick" width="20px" height="20px" />
           Quality of food
         </p>
         <p>{postsOnQuality}</p>
         <p>2 weeks ago</p>
 
         <p>
-          <img
-            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
-            alt="checklist"
-          />
+          <Icon icon="mdi:tick" width="20px" height="20px" />
           Hygiene issues
         </p>
         <p>{postsOnHygiene}</p>
         <p>1 week ago</p>
 
         <p>
-          <img
-            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
-            alt="checklist"
-          />
+          <Icon icon="mdi:tick" width="20px" height="20px" />
           Mess timings
         </p>
         <p>{postsOnTimings}</p>
         <p>1 month ago</p>
 
         <p>
-          <img
-            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
-            alt="checklist"
-          />
+          <Icon icon="mdi:tick" width="20px" height="20px" />
           Change in mess menu
         </p>
         <p>{postsOnMenu}</p>
         <p>2 weeks ago</p>
         <p>
-          <img
-            src="https://i.pinimg.com/736x/18/c2/62/18c262af1f2b8a8d8ba6317474b45067.jpg"
-            alt="checklist"
-          />
+          <Icon icon="mdi:tick" width="20px" height="20px" />
           Others
         </p>
         <p>{postsOnOthers}</p>
