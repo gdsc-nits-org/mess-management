@@ -4,4 +4,5 @@ import Input from "./Input/Input";
 import Textarea from "./Textarea/Textarea";
 import TimetableContent from "./TimetableContent/TimetableContent";
 import SearchBar from "./SearchBar/SearchBar";
-export { Button, Navbar, Input, Textarea, TimetableContent, SearchBar };
+export { Button, Navbar, Input, Textarea, Card, TimetableContent, SearchBar };
+import Card from "./NoticeBoardCard/Card";
