@@ -11,15 +11,15 @@ const Feedback = () => {
     receiver: "",
   });
   const [selected, setSelected] = useState("--Choose--");
-  const [change, setChange] = useState("");
-  const [change1, setChange1] = useState("");
-  const [change2, setChange2] = useState("");
+  const [inputTopic, setInputTopic] = useState("");
+  const [comments, setComments] = useState("");
+  const [inputReceiver, setInputReceiver] = useState("");
   const [state, setState] = useState({
-    postsOnQuality: 0,
-    postsOnHygiene: 0,
-    postsOnTimings: 0,
-    postsOnMenu: 0,
-    postsOnOthers: 0,
+    quality: 0,
+    hygiene: 0,
+    timings: 0,
+    menu: 0,
+    others: 0,
   });
 
   const options = [
@@ -56,45 +56,22 @@ const Feedback = () => {
       comments: "",
       receiver: "",
     });
-    setChange("");
-    setChange1("");
-    setChange2(formData.receiver);
+    setInputTopic("");
+    setComments("");
+    setInputReceiver(formData.receiver);
 
     setSelected("--Choose--");
 
     setState((prevState) => {
-      return {
-        ...prevState,
-        postsOnQuality:
-          selected === "quality"
-            ? prevState.postsOnQuality + 1
-            : prevState.postsOnQuality,
-        postsOnHygiene:
-          selected === "hygiene"
-            ? prevState.postsOnHygiene + 1
-            : prevState.postsOnHygiene,
-        postsOnTimings:
-          selected === "timings"
-            ? prevState.postsOnTimings + 1
-            : prevState.postsOnTimings,
-        postsOnMenu:
-          selected === "menu" ? prevState.postsOnMenu + 1 : prevState.postsOnMenu,
-        postsOnOthers:
-          selected === "others" ? prevState.postsOnOthers + 1 : prevState.postsOnOthers,
-      };
+      const newState = { ...prevState };
+      newState[selected] += 1;
+      return newState;
     });
   };
 
   return (
     <>
-      <MainContent
-        select={selected}
-        postsOnQuality={state.postsOnQuality}
-        postsOnHygiene={state.postsOnHygiene}
-        postsOnTimings={state.postsOnTimings}
-        postsOnMenu={state.postsOnMenu}
-        postsOnOthers={state.postsOnOthers}
-      />
+      <MainContent state={state} />
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend className={style.newFeedback}>
@@ -106,16 +83,16 @@ const Feedback = () => {
           <Input
             width="40vw"
             height="40px"
-            value={change}
-            onChange={(e) => setChange(e.target.value)}
+            value={inputTopic}
+            onChange={(e) => setInputTopic(e.target.value)}
           />
           <br />
 
           <Textarea
             width="870px"
             height="140px"
-            value={change1}
-            onChange={(e) => setChange1(e.target.value)}
+            value={comments}
+            onChange={(e) => setComments(e.target.value)}
             placeholder="Comments"
           />
           <div className={style.form_info}>
@@ -125,8 +102,8 @@ const Feedback = () => {
             <Input
               width="27vw"
               height="40px"
-              value={change2}
-              onChange={(e) => setChange2(e.target.value)}
+              value={inputReceiver}
+              onChange={(e) => setInputReceiver(e.target.value)}
             />
 
             <select

@@ -18,25 +18,18 @@ const Card = ({ text, date }) => {
       return !prev;
     });
   };
-  // const onKeyDownHandler=()=>{
-  //   console.log(active)
-  // }
   return (
     <div className={styles.card}>
       <div className={styles.img}>
-        <button onClick={handleClick}>
-          <img src={active ? closed : open} alt="on" />
-        </button>
+        <img src={active ? closed : open} alt="on" onClick={handleClick} role="button" />
       </div>
       <div className={styles.text}>{text}</div>
       <div className={styles.date}>
         {formatDistanceToNow(new Date(date), { addSuffix: true })}
       </div>
-      <button onClick={handleOpen}>
-        <Button className={styles.Button} type="primary">
-          Open
-        </Button>
-      </button>
+      <Button onClick={handleOpen} className={styles.Button} type="primary">
+        Open
+      </Button>
       {modal && <NoticeModal />}
     </div>
   );

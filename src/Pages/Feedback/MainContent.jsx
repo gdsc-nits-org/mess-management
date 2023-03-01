@@ -1,16 +1,15 @@
 import { Icon } from "@iconify/react";
 import style from "./MainContent.module.scss";
 import { SearchBar } from "../../Components";
+import { TableContents } from "../../Components/TableContents/TableContents";
 const MainContent = (props) => {
-  const { postsOnHygiene, postsOnMenu, postsOnOthers, postsOnQuality, postsOnTimings } =
-    props;
+  const { state } = props;
 
   return (
     <div>
       <div className={style.title}>
         <p className={style.feedback}>Feedback</p>
-
-        <SearchBar />
+        <SearchBar calender="false" width="15rem" height="2rem" />
       </div>
       <div className={style.grid}>
         <p className={style.thead}>
@@ -20,39 +19,31 @@ const MainContent = (props) => {
         <p className={style.thead}>No. of Posts</p>
         <p className={style.thead}>Last Post</p>
 
-        <p>
-          <Icon icon="mdi:tick" width="20px" height="20px" />
-          Quality of food
-        </p>
-        <p>{postsOnQuality}</p>
-        <p>2 weeks ago</p>
+        <TableContents
+          text="Quality of food"
+          number={state.quality}
+          lastPost="2 weeks ago"
+        />
 
-        <p>
-          <Icon icon="mdi:tick" width="20px" height="20px" />
-          Hygiene issues
-        </p>
-        <p>{postsOnHygiene}</p>
-        <p>1 week ago</p>
+        <TableContents
+          text="Hygiene Issues"
+          number={state.hygiene}
+          lastPost="2 weeks ago"
+        />
 
-        <p>
-          <Icon icon="mdi:tick" width="20px" height="20px" />
-          Mess timings
-        </p>
-        <p>{postsOnTimings}</p>
-        <p>1 month ago</p>
+        <TableContents
+          text="Mess timings"
+          number={state.timings}
+          lastPost="1 month ago"
+        />
 
-        <p>
-          <Icon icon="mdi:tick" width="20px" height="20px" />
-          Change in mess menu
-        </p>
-        <p>{postsOnMenu}</p>
-        <p>2 weeks ago</p>
-        <p>
-          <Icon icon="mdi:tick" width="20px" height="20px" />
-          Others
-        </p>
-        <p>{postsOnOthers}</p>
-        <p>1 day ago</p>
+        <TableContents
+          text="Change in mess menu"
+          number={state.menu}
+          lastPost="2 weeks ago"
+        />
+
+        <TableContents text="Others" number={state.others} lastPost="1 day ago" />
       </div>
     </div>
   );
