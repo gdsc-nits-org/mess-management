@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-export const FeedbackResponses = (props) => {
+const FeedbackResponses = (props) => {
   return (
     <>
       <p>
@@ -11,3 +11,4 @@ export const FeedbackResponses = (props) => {
     </>
   );
 };
+export default FeedbackResponses;
