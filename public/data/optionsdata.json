@@ -1,0 +1,26 @@
+[
+  {
+    "label": "--Choose--",
+    "value": "choose"
+  },
+  {
+    "label": "Quality of Food",
+    "value": "quality"
+  },
+  {
+    "label": "Hygiene Issues",
+    "value": "hygiene"
+  },
+  {
+    "label": "Mess timings",
+    "value": "timings"
+  },
+  {
+    "label": "Change in mess menu",
+    "value": "menu"
+  },
+  {
+    "label": "Others",
+    "value": "others"
+  }
+]

@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MainContent from "./MainContent";
 import { Input, Textarea, Button } from "../../Components";
 import style from "./Feedback.module.scss";
@@ -10,6 +10,7 @@ const Feedback = () => {
     comments: "",
     receiver: "",
   });
+
   const [selected, setSelected] = useState("--Choose--");
   const [inputTopic, setInputTopic] = useState("");
   const [comments, setComments] = useState("");
@@ -21,34 +22,13 @@ const Feedback = () => {
     menu: 0,
     others: 0,
   });
+  const [options, setOptions] = useState([]);
 
-  const options = [
-    {
-      label: "--Choose--",
-      value: "choose",
-    },
-    {
-      label: "Quality of Food",
-      value: "quality",
-    },
-    {
-      label: "Hygiene Issues",
-      value: "hygiene",
-    },
-    {
-      label: "Mess timings",
-      value: "timings",
-    },
-    {
-      label: "Change in mess menu",
-      value: "menu",
-    },
-    {
-      label: "Others",
-      value: "others",
-    },
-  ];
-
+  useEffect(() => {
+    fetch("data/optionsdata.json")
+      .then((res) => res.json())
+      .then((content) => setOptions(content));
+  }, []);
   const handleSubmit = (event) => {
     event.preventDefault();
     setFormData({
@@ -71,7 +51,8 @@ const Feedback = () => {
 
   return (
     <>
-      <MainContent state={state} />
+      <MainContent postCount={state} />
+
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend className={style.newFeedback}>
@@ -112,7 +93,11 @@ const Feedback = () => {
               onChange={(e) => setSelected(e.target.value)}
             >
               {options.map((op) => {
-                return <option value={op.value}>{op.label}</option>;
+                return (
+                  <option key={op.value} value={op.value}>
+                    {op.label}
+                  </option>
+                );
               })}
             </select>
           </div>

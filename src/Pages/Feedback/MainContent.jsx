@@ -1,9 +1,18 @@
+import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import style from "./MainContent.module.scss";
 import { SearchBar } from "../../Components";
-import { TableContents } from "../../Components/TableContents/TableContents";
+import { FeedbackResponses } from "../../Components";
+
 const MainContent = (props) => {
-  const { state } = props;
+  const [responses, setResponses] = useState([]);
+  const { postCount } = props;
+
+  useEffect(() => {
+    fetch("data/responsesdata.json")
+      .then((res) => res.json())
+      .then((content) => setResponses(content));
+  }, []);
 
   return (
     <div>
@@ -19,31 +28,16 @@ const MainContent = (props) => {
         <p className={style.thead}>No. of Posts</p>
         <p className={style.thead}>Last Post</p>
 
-        <TableContents
-          text="Quality of food"
-          number={state.quality}
-          lastPost="2 weeks ago"
-        />
-
-        <TableContents
-          text="Hygiene Issues"
-          number={state.hygiene}
-          lastPost="2 weeks ago"
-        />
-
-        <TableContents
-          text="Mess timings"
-          number={state.timings}
-          lastPost="1 month ago"
-        />
-
-        <TableContents
-          text="Change in mess menu"
-          number={state.menu}
-          lastPost="2 weeks ago"
-        />
-
-        <TableContents text="Others" number={state.others} lastPost="1 day ago" />
+        {responses.map((res) => {
+          return (
+            <FeedbackResponses
+              key={res.text}
+              text={res.text}
+              count={postCount[res.topic]}
+              lastPost={res.lastPost}
+            />
+          );
+        })}
       </div>
     </div>
   );
