@@ -1,5 +1,4 @@
 import NutrientTable from "../../Components/NutrientsTable/NutrientsTable";
-import NutrientsTableHeader from "../../Components/NutrientsTableHeader/NutrientsTableHeader";
 import style from "./Nutrients.module.scss";
 
 const Nutrients = () => {
@@ -19,7 +18,6 @@ const Nutrients = () => {
         <h1>Food Nutrients</h1>
       </div>
       <div className={style.table}>
-        <NutrientsTableHeader />
         <NutrientTable box={item} />
       </div>
     </div>

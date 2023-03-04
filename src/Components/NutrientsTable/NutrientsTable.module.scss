@@ -1,29 +1,57 @@
-$grey: grey;
-$red: red;
+$grey: #dedfde;
+$dark-grey: #333;
+$light-grey: #dedfde;
+$red: #cd2a3b;
 
 .tableSection {
   display: flex;
   flex-direction: row;
-  flex: 1;
-  height: 65px;
+  height: 4.5rem;
   width: 70%;
-  margin: 65px auto;
-  padding: 18px;
+  margin: 2.8rem auto;
+  padding: 1.1rem;
   align-items: center;
   font-weight: 500;
-  border-left: 2px solid $grey;
-  border-right: 2px solid $grey;
+  box-shadow: -0.3rem 0 0.3rem -0.3rem $dark-grey, 0.3rem 0 0.3rem -0.3rem $dark-grey;
 }
 
 .tableSection1 {
-  width: 320px;
+  width: 20rem;
 }
 .tableSection2 {
-  width: 320px;
+  width: 20rem;
 }
 .tableSection3 {
-  width: 500px;
+  width: 30rem;
 }
 .tableSection4 {
-  width: 500px;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  border-right: none;
+}
+.breakLine {
+  width: 70%;
+  margin: auto;
+  border-bottom: 0.1rem solid $grey;
+}
+
+.tableHeader {
+  display: flex;
+  flex-direction: row;
+  height: 3.3rem;
+  width: 70%;
+  margin: 4rem auto;
+  align-items: center;
+  font-weight: 500;
+  border-bottom: 0.1rem solid $light-grey;
+  box-shadow: -0.3rem 0 0.3rem -0.3rem $dark-grey, 0.3rem 0 0.3rem -0.3rem $dark-grey;
+}
+
+.tableHeader > * {
+  display: flex;
+  align-items: center;
+  border-right: 0.1rem solid $grey;
+  padding: 0.9rem;
+  height: 3.25rem;
 }
