@@ -28,6 +28,7 @@ const Feedback = () => {
       .then((res) => res.json())
       .then((content) => setResponses(content));
   }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setFormData({
@@ -35,6 +36,7 @@ const Feedback = () => {
       comments: "",
       receiver: "",
     });
+
     setInputTopic("");
     setComments("");
     setInputReceiver(formData.receiver);
@@ -52,13 +54,13 @@ const Feedback = () => {
     <>
       <MainContent postCount={state} />
 
-      <form onSubmit={handleSubmit}>
-        <fieldset>
+      <form className={style.form} onSubmit={handleSubmit}>
+        <fieldset className={style.fieldset}>
           <legend className={style.newFeedback}>
             <Icon icon="octicon:checklist-16" width="20px" height="20px" />
             Create New Feedback
           </legend>
-          <label htmlFor="topic">Feedback Topic</label>
+          <label className={style.label} htmlFor="topic">Feedback Topic</label>
           <br />
           <Input
             width="40vw"
@@ -76,8 +78,8 @@ const Feedback = () => {
             placeholder="Comments"
           />
           <div className={style.form_info}>
-            <label htmlFor="receiver">Feedback addressed to</label>
-            <label htmlFor="feedbackType">Feedback Type</label>
+            <label className={style.label} htmlFor="receiver">Feedback addressed to</label>
+            <label className={style.label} htmlFor="feedbackType">Feedback Type</label>
 
             <Input
               width="27vw"

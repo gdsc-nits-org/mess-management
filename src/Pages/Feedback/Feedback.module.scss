@@ -24,7 +24,7 @@ $secondary_color: #7193bc;
   outline: none;
   border-radius: 25rem;
 }
-label {
+.label {
   margin-left: 0.625rem;
 }
 
@@ -34,13 +34,13 @@ label {
   margin-top: 1.875rem;
 }
 
-form {
+.form {
   margin-left: 10px;
   border: 1px solid transparent;
   display: flex;
   justify-content: center;
 }
-fieldset {
+.fieldset {
   padding-left: 40px;
   padding-right: 80px;
   margin-bottom: 20px;
