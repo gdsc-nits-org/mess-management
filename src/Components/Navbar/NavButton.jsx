@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
-const NavButton = (props) => {
-  const { name } = props;
-  const { link } = props;
+const NavButton = ({ name, link }) => {
   return (
     <NavLink to={link}>
       <button className={styles.navbutton}>{name}</button>
