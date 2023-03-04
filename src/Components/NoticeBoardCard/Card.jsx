@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { useState } from "react";
 import { formatDistanceToNow } from "date-fns";
 import Button from "../Button/Button";

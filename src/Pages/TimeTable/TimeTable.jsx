@@ -8,7 +8,7 @@ const TimeTable = () => {
 
   useEffect(() => {
     fetch("data/timetabledata.json")
-      .then((res) => res.json())
+      .then((response) => response.json())
       .then((content) => setData(content))
       .catch((error) => setErr(error.name));
   }, []);

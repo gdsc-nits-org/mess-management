@@ -13,6 +13,7 @@
 }
 
 .dishes {
+  user-select: none;
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -36,14 +37,15 @@
 }
 
 .icons {
+  user-select: none;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   .icon {
+    user-select: none;
     color: var(--grey-blue);
   }
   .icon:hover {
     cursor: pointer;
-    color: black;
   }
 }
