@@ -28,15 +28,16 @@ const MainContent = (props) => {
         <p className={style.thead}>No. of Posts</p>
         <p className={style.thead}>Last Post</p>
 
-        {responses.map((res) => {
-          return (
-            <FeedbackResponses
-              key={res.text}
-              text={res.text}
-              count={postCount[res.topic]}
-              lastPost={res.lastPost}
-            />
-          );
+        {responses.map((res, index) => {
+          if (index !== 0)
+            return (
+              <FeedbackResponses
+                key={res.text}
+                text={res.text}
+                count={postCount[res.topic]}
+                lastPost={res.lastPost}
+              />
+            );
         })}
       </div>
     </div>

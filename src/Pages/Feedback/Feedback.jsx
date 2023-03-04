@@ -10,7 +10,7 @@ const Feedback = () => {
     comments: "",
     receiver: "",
   });
-
+  const [responses, setResponses] = useState([]);
   const [selected, setSelected] = useState("--Choose--");
   const [inputTopic, setInputTopic] = useState("");
   const [comments, setComments] = useState("");
@@ -22,12 +22,11 @@ const Feedback = () => {
     menu: 0,
     others: 0,
   });
-  const [options, setOptions] = useState([]);
 
   useEffect(() => {
-    fetch("data/optionsdata.json")
+    fetch("data/responsesdata.json")
       .then((res) => res.json())
-      .then((content) => setOptions(content));
+      .then((content) => setResponses(content));
   }, []);
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -92,10 +91,10 @@ const Feedback = () => {
               value={selected}
               onChange={(e) => setSelected(e.target.value)}
             >
-              {options.map((op) => {
+              {responses.map((res) => {
                 return (
-                  <option key={op.value} value={op.value}>
-                    {op.label}
+                  <option key={res.topic} value={res.topic}>
+                    {res.text}
                   </option>
                 );
               })}
