@@ -15,15 +15,9 @@ const Dishes = ({ menu }) => {
           icon="cil:comment-bubble"
           width="25"
           height="25"
-          inline={true}
+          inline
         />
-        <Icon
-          className={style.icon}
-          icon="uiw:like-o"
-          width="25"
-          height="25"
-          inline={true}
-        />
+        <Icon className={style.icon} icon="uiw:like-o" width="25" height="25" inline />
       </div>
     </div>
   );

@@ -1,0 +1,38 @@
+$light_color: #effaff;
+$white: white;
+$base_color: #2da4f9;
+$secondary_color: #7193bc;
+
+.feedback {
+  color: $base_color;
+  margin-bottom: 1rem;
+  margin-left: 20vw;
+  margin-right: 50vw;
+  font-size: 1.875rem;
+  margin-top: 1.125rem;
+}
+
+.thead {
+  background-color: $light_color;
+  color: $base_color;
+  font-weight: bold;
+}
+.grid {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  border: 1px solid black;
+  margin-bottom: 1.25rem;
+  margin-left: 17vw;
+  padding-left: 50px;
+  padding-right: 2.813rem;
+  padding-top: 5px;
+  width: 65vw;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 5px rgb(128, 128, 128, 0.4);
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+}

@@ -18,7 +18,7 @@ const TimeTable = () => {
       <h2>Live TimeTable</h2>
       <table>
         <tr>
-          <th className={style.radius1}></th>
+          <th className={style.radius1}> </th>
           <th>Breakfast</th>
           <th>Lunch</th>
           <th>Snacks</th>
