@@ -60,7 +60,9 @@ const Feedback = () => {
             <Icon icon="octicon:checklist-16" width="20px" height="20px" />
             Create New Feedback
           </legend>
-          <label className={style.label} htmlFor="topic">Feedback Topic</label>
+          <label className={style.label} htmlFor="topic">
+            Feedback Topic
+          </label>
           <br />
           <Input
             width="40vw"
@@ -78,8 +80,12 @@ const Feedback = () => {
             placeholder="Comments"
           />
           <div className={style.form_info}>
-            <label className={style.label} htmlFor="receiver">Feedback addressed to</label>
-            <label className={style.label} htmlFor="feedbackType">Feedback Type</label>
+            <label className={style.label} htmlFor="receiver">
+              Feedback addressed to
+            </label>
+            <label className={style.label} htmlFor="feedbackType">
+              Feedback Type
+            </label>
 
             <Input
               width="27vw"
