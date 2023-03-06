@@ -1,0 +1,86 @@
+ [
+  {
+    "day": "Monday",
+    "dishes": [
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3", "Dish3", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"]
+    ],
+    "dish": "Dish 1",
+    "type": "Non-Veg",
+    "series": [48.8, 24.3, 14.6, 12.3]
+  },
+  {
+    "day": "Tuesday",
+    "dishes": [
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2"],
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"]
+    ],
+    "dish": "Dish 2",
+    "type": "Non-Veg",
+    "series": [55, 20.3, 34.6, 5.3]
+  },
+  {
+    "day": "Wednesday",
+    "dishes": [
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2"],
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"]
+    ],
+    "dish": "Dish 3",
+    "type": "Veg",
+    "series": [70.8, 4.3, 14.6, 12.3]
+  },
+  {
+    "day": "Thursday",
+    "dishes": [
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2"],
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"]
+    ],
+    "dish": "Dish 4",
+    "type": "Non-Veg",
+    "series": [48.8, 24.3, 21.6, 12.3]
+  },
+  {
+    "day": "Friday",
+    "dishes": [
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2"],
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"]
+    ],
+    "dish": "Dish 5",
+    "type": "Veg",
+    "series": [48.8, 20.3, 10.6, 12.3]
+  },
+  {
+    "day": "Saturday",
+    "dishes": [
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2"],
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"]
+    ],
+    "dish": "Dish 6",
+    "type": "Non-Veg",
+    "series": [48.8, 34.3, 14.6, 12.3]
+  },
+  {
+    "day": "Sunday",
+    "dishes": [
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2"],
+      ["Dish1", "Dish2", "Dish3"],
+      ["Dish1", "Dish2", "Dish3"]
+    ],
+    "dish": "Dish 7",
+    "type": "Non-Veg",
+    "series": [48.8, 24.3, 10.6, 12.3]
+  }
+]

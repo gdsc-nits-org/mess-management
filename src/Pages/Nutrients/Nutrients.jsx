@@ -1,16 +1,17 @@
-import NutrientTable from "../../Components/NutrientsTable/NutrientsTable";
+import { useState, useEffect } from "react";
+import { NutrientTable } from "../../Components";
 import style from "./Nutrients.module.scss";
 
 const Nutrients = () => {
-  const item = [
-    { day: "Sunday", dish: "Dish 1", type: "Non-Veg", id: 1 },
-    { day: "Monday", dish: "Dish 2", type: "Non-Veg", id: 2 },
-    { day: "Tuesday", dish: "Dish 3", type: "Veg", id: 3 },
-    { day: "Wednesday", dish: "Dish 4", type: "Non-Veg", id: 4 },
-    { day: "Thursday", dish: "Dish 5", type: "Veg", id: 5 },
-    { day: "Friday", dish: "Dish 6", type: "Non-Veg", id: 6 },
-    { day: "Saturday", dish: "Dish 7", type: "Non-Veg", id: 7 },
-  ];
+  const [data, setData] = useState([]);
+  const [err, setErr] = useState(null);
+
+  useEffect(() => {
+    fetch("data/timetabledata.json")
+      .then((res) => res.json())
+      .then((content) => setData(content))
+      .catch((error) => setErr(error.name));
+  }, []);
 
   return (
     <div>
@@ -18,7 +19,7 @@ const Nutrients = () => {
         <h1>Food Nutrients</h1>
       </div>
       <div className={style.table}>
-        <NutrientTable box={item} />
+        <NutrientTable box={data} err={err} />
       </div>
     </div>
   );

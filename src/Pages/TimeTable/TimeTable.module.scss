@@ -1,0 +1,21 @@
+.container {
+  padding: 3vw;
+  color: var(--base-color);
+  h2 {
+    padding-bottom: 3vw;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    th {
+      padding: 2vw 3vw;
+      background-color: var(--light-blue);
+    }
+    .radius1 {
+      border-radius: 20px 0 0 0;
+    }
+    .radius2 {
+      border-radius: 0 20px 0 0;
+    }
+  }
+}

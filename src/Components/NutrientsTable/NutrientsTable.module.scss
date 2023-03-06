@@ -1,7 +1,5 @@
-$grey: #dedfde;
 $dark-grey: #333;
 $light-grey: #dedfde;
-$red: #cd2a3b;
 
 .tableSection {
   display: flex;
@@ -33,7 +31,11 @@ $red: #cd2a3b;
 .breakLine {
   width: 70%;
   margin: auto;
-  border-bottom: 0.1rem solid $grey;
+  border-bottom: 0.15rem solid $light-grey;
+}
+
+.text {
+  padding: 0.5rem;
 }
 
 .tableHeader {
@@ -51,7 +53,7 @@ $red: #cd2a3b;
 .tableHeader > * {
   display: flex;
   align-items: center;
-  border-right: 0.1rem solid $grey;
+  border-right: 0.1rem solid $light-grey;
   padding: 0.9rem;
   height: 3.25rem;
 }

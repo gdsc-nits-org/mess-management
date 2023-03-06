@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --gdsc-font-1: "Poppins", sans-serif;
+  --gdsc-font-2: "Roboto", sans-serif;
 
   --gdsc-blue-1-100: #4885ed;
   --gdsc-blue-2-100: #4285f4;
   --gdsc-blue-3-100: #547dbf;
 
-  --gdsc-green-1-100: #3cba54;
+  --gdsc-green-1-100: #09753c;
 
   --gdsc-red-1-100: #db3236;
   --gdsc-red-2-100: #f0766c;
@@ -25,6 +27,12 @@
   --grey-text-1-100: rgba(101, 108, 115, 1);
   --grey-text-1-70: rgba(101, 108, 115, 0.7);
 
+  --base-color: #2da4f9;
+  --grey-blue: #7193bc;
+  --light-blue: #effaff;
+  --drop-background: #effafe;
+  --light-green: #e6f4f1;
+
   --heading-1-text-weight: 600;
   --heading-2-text-weight: 500;
   --paragraph-1-text-weight: 400;
@@ -36,4 +44,5 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--gdsc-font-1);
+  scroll-behavior: smooth;
 }

@@ -1,8 +1,5 @@
-$base-color: green;
-$grey: grey;
-
 .heading {
-  color: $base-color;
+  color: var(--base-color);
   font-size: 0.8rem;
   margin: 1.8rem 12.5rem;
 }

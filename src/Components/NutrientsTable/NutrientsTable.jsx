@@ -13,19 +13,19 @@ const NutrientTable = (props) => {
       <div className={style.tableHeader}>
         <div className={style.tableSection1}>
           <MdOutlineCalendarToday />
-          Day
+          <div className={style.text}>Day</div>
         </div>
         <div className={style.tableSection2}>
           <RiAlignLeft />
-          Dish
+          <div className={style.text}>Dish</div>
         </div>
         <div className={style.tableSection3}>
           <BsListUl />
-          Type
+          <div className={style.text}>Type</div>
         </div>
         <div className={style.tableSection4}>
           <RiLoader2Fill />
-          Nutrients
+          <div className={style.text}>Nutrients</div>
         </div>
       </div>
 
@@ -47,7 +47,7 @@ const NutrientTable = (props) => {
               </span>
             </div>
             <div className={style.tableSection4}>
-              <Donut />
+              <Donut series={bx.series} />
             </div>
           </div>
           <div className={style.breakLine}></div>

@@ -1,20 +1,28 @@
-$green: green;
+$white: white;
 
-.btn {
+.primary {
   outline: none;
-  border: 1px solid var(--theme-1-100);
-  background-color: $green;
+  border: 0.2rem solid var(--theme-1-100);
+  background-color: var(--base-color);
   width: 7rem;
-  height: 3rem;
   border-radius: 2rem;
   padding: 1%;
-  margin: 2%;
+  margin: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  cursor: pointer;
+  color: $white;
 }
-
-.btn-large {
+.secondary {
+  outline: none;
+  border: 0.1rem solid var(--base-color);
+  background-color: transparent;
+  width: 7rem;
+  border-radius: 2rem;
+  padding: 1%;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--base-color);
 }

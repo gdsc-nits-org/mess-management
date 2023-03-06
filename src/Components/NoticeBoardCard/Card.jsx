@@ -1,17 +1,43 @@
-import React from "react";
+import { Icon } from "@iconify/react";
+import { useState } from "react";
+import { formatDistanceToNow } from "date-fns";
 import Button from "../Button/Button";
 import styles from "./Card.module.scss";
-const Card = (props) => {
-  const { text } = props;
-  const { img } = props;
-  const { active } = props;
-  const { date } = props;
+import NoticeModal from "./NoticeModal";
+
+const Card = ({ text, date }) => {
+  const [active, setActive] = useState(false);
+  const [modal, setModal] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+  const handleOpen = () => {
+    setModal((prev) => {
+      return !prev;
+    });
+  };
   return (
     <div className={styles.card}>
-      <img src={img} style={{ display: active }} alt="on" />
+      <div className={styles.img}>
+        <Icon
+          icon={
+            active ? "material-symbols:bookmark-outline" : "material-symbols:bookmark"
+          }
+          width="19"
+          height="25"
+          color="#7293bc"
+          onClick={handleClick}
+        />
+      </div>
       <div className={styles.text}>{text}</div>
-      <div className={styles.date}>{date}</div>
-      <Button className={styles.Button}>Button</Button>
+      <div className={styles.date}>
+        {formatDistanceToNow(new Date(date), { addSuffix: true })}
+      </div>
+      <Button onClick={handleOpen} className={styles.Button} type="primary">
+        Open
+      </Button>
+      {modal && <NoticeModal />}
     </div>
   );
 };
