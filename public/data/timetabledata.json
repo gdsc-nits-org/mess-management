@@ -120,7 +120,7 @@
         "time": "Breakfast",
         "meals": ["Dish1", "Dish2", "Dish3"]
       },
-      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3","Dish4"] },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3", "Dish4"] },
       {
         "time": "Snacks",
         "meals": ["Dish1", "Dish2", "Dish3"]
