@@ -36,6 +36,14 @@
   }
 }
 
+@media screen and (width < 940px) {
+  .dishes {
+    color: var(--grey-text-1-100);
+    border: 1px solid var(--gdsc-line-1-100);
+    border-radius: 1rem;
+  }
+}
+
 .icons {
   user-select: none;
   display: flex;

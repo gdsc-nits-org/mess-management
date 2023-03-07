@@ -2,64 +2,134 @@
   {
     "day": "MON",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3", "Dish3", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Chole", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Pakora", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "fullDay": "Monday"
   },
   {
     "day": "TUE",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Puri", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dal", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "fullDay": "Tuesday"
   },
   {
     "day": "WED",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Idli", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "fullDay": "Wednesday"
   },
   {
     "day": "THURS",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Dosa", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "fullDay": "Thursday"
   },
   {
     "day": "FRI",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "fullDay": "Friday"
   },
   {
     "day": "SAT",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "fullDay": "Saturday"
   },
   {
     "day": "SUN",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3","Dish4"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "fullDay": "Sunday"
   }
 ]
