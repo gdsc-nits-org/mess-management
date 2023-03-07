@@ -9,7 +9,7 @@ const Dishes = ({ menu }) => {
   return (
     <div className={style.dishes}>
       <ul>
-        {menu.map((dish) => {
+        {menu.meals.map((dish) => {
           return <li> {dish} </li>;
         })}
       </ul>
@@ -21,7 +21,7 @@ const Dishes = ({ menu }) => {
           height="22"
           inline
           onClick={() => {
-            setLike(!like);
+            setLike((prev) => !prev);
             setDislike(false);
           }}
         />
@@ -32,7 +32,7 @@ const Dishes = ({ menu }) => {
           height="22"
           inline
           onClick={() => {
-            setDislike(!dislike);
+            setDislike((prev) => !prev);
             setLike(false);
           }}
         />

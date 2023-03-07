@@ -10,8 +10,11 @@ const Card = ({ text, date }) => {
   const [modal, setModal] = useState(false);
 
   const handleClick = () => {
-    setActive(!active);
+    setActive((prev) => {
+      return !prev;
+    });
   };
+
   const handleOpen = () => {
     setModal((prev) => {
       return !prev;
