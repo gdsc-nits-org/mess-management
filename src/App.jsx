@@ -6,7 +6,7 @@ import { Home, TimeTable, Notice, Feedback } from "./Pages";
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/timetable" element={<TimeTable />} />
