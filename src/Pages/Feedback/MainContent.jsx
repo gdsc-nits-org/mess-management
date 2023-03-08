@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import style from "./MainContent.module.scss";
-import { SearchBar } from "../../Components";
-import { FeedbackResponses } from "../../Components";
+import { SearchBar, FeedbackResponses } from "../../Components";
 
 const MainContent = (props) => {
   const [responses, setResponses] = useState([]);
@@ -29,7 +28,7 @@ const MainContent = (props) => {
         <p className={style.thead}>Last Post</p>
 
         {responses.map((res, index) => {
-          if (index !== 0)
+          if (index !== 0) {
             return (
               <FeedbackResponses
                 key={res.text}
@@ -38,6 +37,8 @@ const MainContent = (props) => {
                 lastPost={res.lastPost}
               />
             );
+          }
+          return null;
         })}
       </div>
     </div>
