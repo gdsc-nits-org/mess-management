@@ -11,6 +11,7 @@ $white: white;
   align-items: center;
   justify-content: center;
   color: $white;
+  cursor: pointer;
 }
 .secondary {
   outline: none;
@@ -24,4 +25,5 @@ $white: white;
   align-items: center;
   justify-content: center;
   color: var(--base-color);
+  cursor: pointer;
 }

@@ -20,16 +20,25 @@ const Card = ({ text, date }) => {
   };
   return (
     <div className={styles.card}>
-      <div className={styles.img}>
-        <img src={active ? closed : open} alt="on" onClick={handleClick} role="button" />
+      <div className={styles.container}>
+        <div className={styles.img}>
+          <img
+            src={active ? closed : open}
+            alt="on"
+            onClick={handleClick}
+            role="button"
+          />
+        </div>
+        <div className={styles.text}>{text}</div>
       </div>
-      <div className={styles.text}>{text}</div>
-      <div className={styles.date}>
-        {formatDistanceToNow(new Date(date), { addSuffix: true })}
+      <div className={styles.container2}>
+        <div className={styles.date}>
+          {formatDistanceToNow(new Date(date), { addSuffix: true })}
+        </div>
+        <Button onClick={handleOpen} className={styles.Button} type="primary">
+          Open
+        </Button>
       </div>
-      <Button onClick={handleOpen} className={styles.Button} type="primary">
-        Open
-      </Button>
       {modal && <NoticeModal />}
     </div>
   );

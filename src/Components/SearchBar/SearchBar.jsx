@@ -30,16 +30,16 @@ const SearchBar = ({
           onClick={onClick}
           icon="material-symbols:search"
           color="#2da4f9"
-          width="30"
-          height="30"
+          width="25"
+          height="25"
         />
         {calender && (
           <Icon
             onClick={onClick2}
             icon="uis:calender"
             color="#2da4f9"
-            width="28"
-            height="28"
+            width="22"
+            height="25"
           />
         )}
       </div>
