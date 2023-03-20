@@ -1,21 +1,19 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import Options from "./Options";
-import Meal from "./Meal";
-import style from "./Dropdown.module.scss";
+import style from "./DropDown.module.scss";
 
-const Dropdown = ({ data }) => {
+const Dropdown = ({ data, index, setIndex }) => {
   const [drop, setDrop] = useState(false);
-  const [meal, setMeal] = useState(null);
 
   const handleClick = () => {
     setDrop((prev) => !prev);
   };
 
   return (
-    <div className={style.container}>
+    <>
       <button className={style.header} onClick={handleClick}>
-        <span>{meal !== null ? data[meal].fullDay : "Select Day"}</span>
+        <span>{data[index]?.title}</span>
         <Icon
           className={style.arrow}
           style={drop && { transform: "rotate(-180deg)" }}
@@ -24,9 +22,8 @@ const Dropdown = ({ data }) => {
           width="70"
         />
       </button>
-      {drop && <Options data={data} setMeal={setMeal} setDrop={setDrop} />}
-      {meal !== null && <Meal meal={meal} data={data} />}
-    </div>
+      {drop && <Options data={data} setIndex={setIndex} setDrop={setDrop} />}
+    </>
   );
 };
 

@@ -1,5 +1,26 @@
 [
   {
+    "key":0,
+    "day": "SUN",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish267656", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3", "Dish4"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Sunday"
+  },
+  {
+    "key":1,
     "day": "MON",
     "dishes": [
       {
@@ -16,9 +37,10 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "fullDay": "Monday"
+    "title": "Monday"
   },
   {
+    "key":2,
     "day": "TUE",
     "dishes": [
       {
@@ -35,9 +57,10 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "fullDay": "Tuesday"
+    "title": "Tuesday"
   },
   {
+    "key":3,
     "day": "WED",
     "dishes": [
       {
@@ -54,9 +77,10 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "fullDay": "Wednesday"
+    "title": "Wednesday"
   },
   {
+    "key":4,
     "day": "THURS",
     "dishes": [
       {
@@ -73,9 +97,10 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "fullDay": "Thursday"
+    "title": "Thursday"
   },
   {
+    "key":5,
     "day": "FRI",
     "dishes": [
       {
@@ -92,9 +117,10 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "fullDay": "Friday"
+    "title": "Friday"
   },
   {
+    "key":6,
     "day": "SAT",
     "dishes": [
       {
@@ -111,25 +137,6 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "fullDay": "Saturday"
-  },
-  {
-    "day": "SUN",
-    "dishes": [
-      {
-        "time": "Breakfast",
-        "meals": ["Dish1", "Dish2", "Dish3"]
-      },
-      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3", "Dish4"] },
-      {
-        "time": "Snacks",
-        "meals": ["Dish1", "Dish2", "Dish3"]
-      },
-      {
-        "time": "Dinner",
-        "meals": ["Dish1", "Dish2", "Dish3"]
-      }
-    ],
-    "fullDay": "Sunday"
+    "title": "Saturday"
   }
 ]

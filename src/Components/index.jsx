@@ -4,7 +4,8 @@ import Input from "./Input/Input";
 import Textarea from "./Textarea/Textarea";
 import Card from "./NoticeBoardCard/Card";
 import TimetableContent from "./TimetableContent/TimetableContent";
-import Dropdown from "./TimetableContent/MobileResponsive/Dropdown";
+import TableMb from "./TimetableContent/TableMb";
+import Dropdown from "./DropDown/DropDown";
 import SearchBar from "./SearchBar/SearchBar";
 import FeedbackResponses from "./FeedbackResponses/FeedbackResponses";
 export {
@@ -14,6 +15,7 @@ export {
   Textarea,
   Card,
   TimetableContent,
+  TableMb,
   Dropdown,
   SearchBar,
   FeedbackResponses,

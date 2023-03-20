@@ -35,8 +35,14 @@
     }
   }
 }
+.container {
+  display: none;
+}
 
 @media screen and (width < 940px) {
+  .container {
+    display: block;
+  }
   .dishes {
     color: var(--grey-text-1-100);
     border: 1px solid var(--gdsc-line-1-100);
@@ -55,5 +61,27 @@
   }
   .icon:hover {
     cursor: pointer;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  padding: 2vw 2vw 0;
+  margin: 2vw 2vw 0;
+  span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 2vw;
+  }
+}
+
+@media screen and (width < 500px) {
+  .card {
+    padding: 0;
+    margin: 1vw 1vw 0;
   }
 }
