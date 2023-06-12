@@ -7,22 +7,26 @@ const Pages = [
   { name: "Feedback", path: "/feedback" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ isMobile, openMenu, setOpenMenu }) => {
   return (
     <>
-      <div className={styles.header}>
-        <div className={styles.header1}>
-          <img src="" alt="logo" />
-          <h1 className={styles.mm}>Mess Management</h1>
-        </div>
-        <div className={styles.header2}>
-          <img src="" alt="profile" />
-          <h1 className={styles.user}>Username</h1>
-        </div>
-      </div>
-      <nav>
+      {isMobile && (
+        <button className={styles.menuBtn} onClick={() => setOpenMenu((prev) => !prev)}>
+          <img src={`/vectors/${!openMenu ? "open" : "close"}.svg`} alt="menu" />
+        </button>
+      )}
+      <nav
+        className={`${isMobile ? styles.navMobile : styles.navLinks} ${
+          openMenu ? styles.openMenu : ""
+        }`}
+      >
         {Pages.map((item) => (
-          <NavButton name={item.name} link={item.path} />
+          <NavButton
+            name={item.name}
+            link={item.path}
+            isMobile={isMobile}
+            setOpenMenu={setOpenMenu}
+          />
         ))}
       </nav>
     </>

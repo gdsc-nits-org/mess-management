@@ -1,6 +1,6 @@
 [
   {
-    "key":0,
+    "key": 0,
     "day": "SUN",
     "dishes": [
       {
@@ -20,7 +20,7 @@
     "title": "Sunday"
   },
   {
-    "key":1,
+    "key": 1,
     "day": "MON",
     "dishes": [
       {
@@ -40,7 +40,7 @@
     "title": "Monday"
   },
   {
-    "key":2,
+    "key": 2,
     "day": "TUE",
     "dishes": [
       {
@@ -60,7 +60,7 @@
     "title": "Tuesday"
   },
   {
-    "key":3,
+    "key": 3,
     "day": "WED",
     "dishes": [
       {
@@ -80,7 +80,7 @@
     "title": "Wednesday"
   },
   {
-    "key":4,
+    "key": 4,
     "day": "THURS",
     "dishes": [
       {
@@ -100,7 +100,7 @@
     "title": "Thursday"
   },
   {
-    "key":5,
+    "key": 5,
     "day": "FRI",
     "dishes": [
       {
@@ -120,7 +120,7 @@
     "title": "Friday"
   },
   {
-    "key":6,
+    "key": 6,
     "day": "SAT",
     "dishes": [
       {

@@ -27,12 +27,15 @@
   --grey-text-1-100: rgba(101, 108, 115, 1);
   --grey-text-1-70: rgba(101, 108, 115, 0.7);
 
+  --dark-blue: #062d5e;
+  --base2-blue: #2da3fa;
   --base-color: #2da4f9;
   --grey-blue: #7193bc;
   --grey-blue-2: #7293bc;
   --light-blue: #effaff;
   --drop-background: #effafe;
   --light-green: #e6f4f1;
+  --light-grey: #686868;
 
   --heading-1-text-weight: 600;
   --heading-2-text-weight: 500;
@@ -46,4 +49,16 @@
   box-sizing: border-box;
   font-family: var(--gdsc-font-1);
   scroll-behavior: smooth;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .sub-container {
+    overflow: scroll;
+    width: 100%;
+    position: relative;
+  }
 }

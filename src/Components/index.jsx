@@ -8,7 +8,9 @@ import TableMb from "./TimetableContent/TableMb";
 import Dropdown from "./DropDown/DropDown";
 import SearchBar from "./SearchBar/SearchBar";
 import FeedbackResponses from "./FeedbackResponses/FeedbackResponses";
+import Header from "./Header/Header";
 export {
+  Header,
   Button,
   Navbar,
   Input,
