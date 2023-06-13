@@ -29,6 +29,7 @@ const Navbar = ({ isMobile }) => {
       >
         {Pages.map((item) => (
           <NavButton
+            key={item.name}
             name={item.name}
             link={item.path}
             icon={item.icon}

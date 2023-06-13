@@ -8,17 +8,11 @@ const Options = ({ data, setIndex, setDrop }) => {
 
   return (
     <div className={style.options}>
-      {data.map((opt, index) => {
-        return (
-          <button
-            key={opt.key}
-            className={style.optbtn}
-            onClick={() => handleClick(index)}
-          >
-            {opt.title}
-          </button>
-        );
-      })}
+      {data.map((opt, index) => (
+        <button key={opt.key} className={style.optbtn} onClick={() => handleClick(index)}>
+          {opt.title}
+        </button>
+      ))}
     </div>
   );
 };

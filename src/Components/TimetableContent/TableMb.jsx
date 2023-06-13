@@ -7,7 +7,7 @@ const TableMb = ({ data }) => {
   const [index, setIndex] = useState(new Date().getDay());
   return (
     <div className={style.container}>
-      <Dropdown data={data} index={index} setIndex={setIndex} defaultTitle="Select Day" />
+      <Dropdown {...{ index, setIndex, data }} />
       <Meal index={index} data={data} />
     </div>
   );

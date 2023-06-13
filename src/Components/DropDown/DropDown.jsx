@@ -22,7 +22,7 @@ const Dropdown = ({ data, index, setIndex }) => {
           width="70"
         />
       </button>
-      {drop && <Options data={data} setIndex={setIndex} setDrop={setDrop} />}
+      {drop && <Options {...{ data, setIndex, setDrop }} />}
     </>
   );
 };
