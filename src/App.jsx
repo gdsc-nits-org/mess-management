@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Header, Navbar } from "./Components";
 import { Home, TimeTable, Notice, Feedback } from "./Pages";
@@ -7,10 +6,9 @@ import "./index.scss";
 
 const App = () => {
   const isMobile = useMediaQuery("(max-width: 940px)");
-  const [openMenu, setOpenMenu] = useState(false);
   return (
     <div className="main-container">
-      <Navbar isMobile={isMobile} openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      <Navbar isMobile={isMobile} />
       <div className="sub-container">
         <Header isMobile={isMobile} />
         <Routes>
