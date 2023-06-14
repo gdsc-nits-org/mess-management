@@ -1,58 +1,77 @@
-$grey: grey;
-$white: white;
-
-nav {
-  margin: 0.5%;
+.navLinks {
+  width: 15%;
+  padding: 2.5rem 1rem 0;
   display: flex;
-  align-items: center;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-inline: 1%;
-}
-
-.header1 {
-  display: flex;
-  padding: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: auto;
-}
-.header2 {
-  margin-right: 2%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mm {
-  margin: 0.5rem;
-  background-color: $white;
-  color: var(--base-color);
-}
-.user {
-  font-weight: 300;
-  color: $grey;
-}
-
-.navbutton {
-  border: none;
-  width: inherit;
-  font-weight: 600;
-  font-size: 1.5rem;
-  padding: 1rem;
-  color: $white;
-  transition: 0.6s ease-in-out;
-  background-color: var(--base-color);
-  a:hover & {
-    color: var(--base-color);
-    background-color: $white;
+  flex-direction: column;
+  background-color: var(--grey-blue);
+  a {
+    display: flex;
+    gap: 0.6rem;
+    font-weight: 400;
+    width: fit-content;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: rgb(98, 97, 97); //experimental
+  }
+  .navActive {
+    color: rgb(98, 97, 97); //experimental
   }
 }
-a {
-  width: 100%;
+
+@media only screen and (min-width: 1390px) {
+  .navLinks {
+    padding: 3rem;
+  }
+}
+
+.navMobile {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  opacity: 0;
+  z-index: 10;
+  width: 80%;
+  background: linear-gradient(
+      149.56deg,
+      rgba(114, 147, 188, 0.4) 0.84%,
+      rgba(0, 0, 0, 0.228) 0.85%,
+      rgba(45, 163, 250, 0.4) 99.21%
+    ),
+    linear-gradient(
+      181.35deg,
+      rgba(255, 255, 255, 0.5) 1.15%,
+      rgba(255, 255, 255, 0) 98.91%
+    );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark-blue);
+  }
+}
+.openMenu {
+  transition: 200ms;
+  right: 0;
+  opacity: 1;
+}
+
+.menuBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 20;
+  border: none;
+  background: none;
 }
