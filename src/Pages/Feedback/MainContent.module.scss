@@ -37,7 +37,7 @@ $secondary_color: #7193bc;
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 380px) {
   .feedback {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -47,16 +47,21 @@ $secondary_color: #7193bc;
     padding-left: 20px;
     padding-right: 2rem;
     grid-column-gap:0.5rem;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    font-size:11px;
+  }
+  .thead{
+    font-size:13px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 381px) and (max-width: 1023px) {
   .grid {
     padding-left: 1.875rem;
     padding-right: 2rem;
+    margin-bottom:60px;
   }
 }
 
