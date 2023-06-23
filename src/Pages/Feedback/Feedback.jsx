@@ -50,6 +50,17 @@ const Feedback = () => {
     });
   };
 
+  const getResponsiveWidth = () => {
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    if (viewportWidth < 600) {
+      return "60vw";
+    } else if (viewportWidth < 1200) {
+      return "50vw";
+    } else {
+      return "30vw";
+    }
+  };
+
   return (
     <>
       <MainContent postCount={state} />
@@ -65,7 +76,7 @@ const Feedback = () => {
           </label>
           <br />
           <Input
-            width="40vw"
+            width={getResponsiveWidth()}
             height="40px"
             value={inputTopic}
             onChange={(e) => setInputTopic(e.target.value)}
@@ -73,22 +84,22 @@ const Feedback = () => {
           <br />
 
           <Textarea
-            width="870px"
+            width={getResponsiveWidth()}
             height="140px"
             value={comments}
             onChange={(e) => setComments(e.target.value)}
             placeholder="Comments"
           />
           <div className={style.form_info}>
-            <label className={style.label} htmlFor="receiver">
+            <label className={style.receiverLabel} htmlFor="receiver">
               Feedback addressed to
             </label>
-            <label className={style.label} htmlFor="feedbackType">
+            <label className={style.feedbackTypeLabel} htmlFor="feedbackType">
               Feedback Type
             </label>
 
             <Input
-              width="27vw"
+              width={getResponsiveWidth()}
               height="40px"
               value={inputReceiver}
               onChange={(e) => setInputReceiver(e.target.value)}
@@ -116,4 +127,5 @@ const Feedback = () => {
     </>
   );
 };
+
 export default Feedback;
