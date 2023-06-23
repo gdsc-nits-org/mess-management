@@ -17,7 +17,6 @@ const MainContent = (props) => {
     <div>
       <div className={style.title}>
         <p className={style.feedback}>Feedback</p>
-        <SearchBar calender="false" width="15rem" height="2rem" />
       </div>
       <div className={style.grid}>
         <p className={style.thead}>
