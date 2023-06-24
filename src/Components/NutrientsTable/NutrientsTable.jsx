@@ -40,7 +40,7 @@ const NutrientTable = (props) => {
                   backgroundColor: bx.type === "Non-Veg" ? "#cd2a3b" : "#d4f9d2",
                   borderRadius: 5,
                   padding: 5,
-                  fontSize: 13,
+                  // fontSize: 13,
                 }}
               >
                 {bx.type}

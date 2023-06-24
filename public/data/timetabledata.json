@@ -1,6 +1,6 @@
- [
+[
   {
-    "day": "Monday",
+    "day": "Mon",
     "dishes": [
       ["Dish1", "Dish2", "Dish3"],
       ["Dish1", "Dish2", "Dish3", "Dish3", "Dish3"],
@@ -12,7 +12,7 @@
     "series": [48.8, 24.3, 14.6, 12.3]
   },
   {
-    "day": "Tuesday",
+    "day": "Tue",
     "dishes": [
       ["Dish1", "Dish2", "Dish3"],
       ["Dish1", "Dish2"],
@@ -24,7 +24,7 @@
     "series": [55, 20.3, 34.6, 5.3]
   },
   {
-    "day": "Wednesday",
+    "day": "Wed",
     "dishes": [
       ["Dish1", "Dish2", "Dish3"],
       ["Dish1", "Dish2"],
@@ -36,7 +36,7 @@
     "series": [70.8, 4.3, 14.6, 12.3]
   },
   {
-    "day": "Thursday",
+    "day": "Thu",
     "dishes": [
       ["Dish1", "Dish2", "Dish3"],
       ["Dish1", "Dish2"],
@@ -48,7 +48,7 @@
     "series": [48.8, 24.3, 21.6, 12.3]
   },
   {
-    "day": "Friday",
+    "day": "Fri",
     "dishes": [
       ["Dish1", "Dish2", "Dish3"],
       ["Dish1", "Dish2"],
@@ -60,7 +60,7 @@
     "series": [48.8, 20.3, 10.6, 12.3]
   },
   {
-    "day": "Saturday",
+    "day": "Sat",
     "dishes": [
       ["Dish1", "Dish2", "Dish3"],
       ["Dish1", "Dish2"],
@@ -72,7 +72,7 @@
     "series": [48.8, 34.3, 14.6, 12.3]
   },
   {
-    "day": "Sunday",
+    "day": "Sun",
     "dishes": [
       ["Dish1", "Dish2", "Dish3"],
       ["Dish1", "Dish2"],

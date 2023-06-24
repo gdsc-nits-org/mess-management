@@ -5,6 +5,16 @@ const Donut = (props) => {
 
   const options = {
     colors: ["#5c44db", "#a799eb", "#d3cdf4", "#ece8fe"],
+    //   responsive: [{
+    //     breakpoint: 600,
+    //     options: { dataLabels: {
+    //       enabled: false},
+    //       tooltip: {
+    //         enabled: true,
+    //       }
+    //     }
+
+    // }],
     labels: ["Carbs", "Fats", "Fibres", "Protein"],
     dataLabels: {
       style: {
@@ -24,12 +34,16 @@ const Donut = (props) => {
         borderColor: "none",
       },
     },
+    chart: {
+      width: "100%",
+    },
     subtitle: {
       text: "Nutrients",
       align: "middle",
       margin: 10,
       offsetX: 2,
       offsetY: 84,
+      // offsetY: 80,
       floating: true,
       style: {
         fontSize: "0.5rem",
@@ -41,7 +55,7 @@ const Donut = (props) => {
       width: 0,
     },
     tooltip: {
-      // enabled: false
+      // enabled: false,
     },
     plotOptions: {
       pie: {
@@ -50,6 +64,10 @@ const Donut = (props) => {
         },
       },
     },
+
+    //   chart: {
+    //     width: '50%'
+    // },
     legend: {
       show: false,
     },
@@ -58,6 +76,7 @@ const Donut = (props) => {
   return (
     <div>
       <Chart options={options} type="donut" series={series} width="210" />
+      {/* width="210" */}
     </div>
   );
 };
