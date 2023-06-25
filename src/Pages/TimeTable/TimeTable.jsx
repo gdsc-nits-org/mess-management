@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { TimetableContent } from "../../Components";
+import { TimetableContent, TableMb } from "../../Components";
 import style from "./TimeTable.module.scss";
 
 const TimeTable = () => {
@@ -16,6 +16,7 @@ const TimeTable = () => {
   return (
     <div className={style.container}>
       <h2>Live TimeTable</h2>
+      <TableMb data={data} />
       <table>
         <tr>
           <th className={style.radius1}> </th>

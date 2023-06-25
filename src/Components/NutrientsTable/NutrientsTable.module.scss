@@ -31,6 +31,7 @@ $light-grey: #dedfde;
   display: flex;
   justify-content: center;
   border-right: none;
+  z-index: -1;
 }
 .breakLine {
   width: 70%;

@@ -1,18 +1,25 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar } from "./Components";
-import { Home, Notice, TimeTable, Nutrients } from "./Pages";
+import { Header, Navbar } from "./Components";
+import { Home, TimeTable, Notice, Feedback, Nutrients } from "./Pages";
+import useMediaQuery from "./Hooks/useMediaQuery";
+import "./index.scss";
 
 const App = () => {
+  const isMobile = useMediaQuery("(max-width: 940px)");
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/nutrients" element={<Nutrients />} />
-        <Route path="/notice" element={<Notice />} />
-        <Route path="/timetable" element={<TimeTable />} />
-      </Routes>
-    </>
+    <div className="main-container">
+      <Navbar isMobile={isMobile} />
+      <div className="sub-container">
+        <Header isMobile={isMobile} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/timetable" element={<TimeTable />} />
+          <Route path="/notice" element={<Notice />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/nutrients" element={<Nutrients />} />
+        </Routes>
+      </div>
+    </div>
   );
 };
 

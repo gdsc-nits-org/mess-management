@@ -12,6 +12,7 @@ const Card = ({ text, date }) => {
   const handleClick = () => {
     setActive(!active);
   };
+
   const handleOpen = () => {
     setModal((prev) => {
       return !prev;

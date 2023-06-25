@@ -8,17 +8,15 @@ const TimetableContent = ({ data, err }) => {
 
   return (
     <>
-      {data.map(({ day, dishes }) => {
+      {data.map(({ day, dishes, key }) => {
         return (
-          <tr className={style.content}>
+          <tr key={key} className={style.content}>
             <th>{day}</th>
-            {dishes.map((dish) => {
-              return (
-                <td>
-                  <Dishes menu={dish} />
-                </td>
-              );
-            })}
+            {dishes.map((dish) => (
+              <td>
+                <Dishes menu={dish} />
+              </td>
+            ))}
           </tr>
         );
       })}

@@ -1,84 +1,161 @@
 [
   {
-    "day": "Mon",
+    "key": 0,
+    "day": "SUN",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3", "Dish3", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish267656", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3", "Dish4"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
     ],
+    "title": "Sunday",
     "dish": "Dish 1",
     "type": "Non-Veg",
     "series": [48.8, 24.3, 14.6, 12.3]
   },
   {
-    "day": "Tue",
+    "key": 1,
+    "day": "MON",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
+      {
+        "time": "Breakfast",
+        "meals": ["Chole", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Pakora", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
     ],
+    "title": "Monday",
     "dish": "Dish 2",
     "type": "Non-Veg",
     "series": [55, 20.3, 34.6, 5.3]
   },
   {
-    "day": "Wed",
+    "key": 2,
+    "day": "TUE",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
+      {
+        "time": "Breakfast",
+        "meals": ["Puri", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dal", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
     ],
+    "title": "Tuesday",
     "dish": "Dish 3",
     "type": "Veg",
     "series": [70.8, 4.3, 14.6, 12.3]
   },
   {
-    "day": "Thu",
+    "key": 3,
+    "day": "WED",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
+      {
+        "time": "Breakfast",
+        "meals": ["Idli", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
     ],
+    "title": "Wednesday",
     "dish": "Dish 4",
     "type": "Non-Veg",
     "series": [48.8, 24.3, 21.6, 12.3]
   },
   {
-    "day": "Fri",
+    "key": 4,
+    "day": "THURS",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
+      {
+        "time": "Breakfast",
+        "meals": ["Dosa", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
     ],
+    "title": "Thursday",
     "dish": "Dish 5",
     "type": "Veg",
     "series": [48.8, 20.3, 10.6, 12.3]
   },
   {
-    "day": "Sat",
+    "key": 5,
+    "day": "FRI",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
     ],
+    "title": "Friday",
     "dish": "Dish 6",
     "type": "Non-Veg",
     "series": [48.8, 34.3, 14.6, 12.3]
   },
   {
-    "day": "Sun",
+    "key": 6,
+    "day": "SAT",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
     ],
+    "title": "Saturday",
     "dish": "Dish 7",
     "type": "Non-Veg",
     "series": [48.8, 24.3, 10.6, 12.3]
