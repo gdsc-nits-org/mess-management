@@ -1,65 +1,142 @@
 [
   {
-    "day": "MON",
-    "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3", "Dish3", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
-  },
-  {
-    "day": "TUE",
-    "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
-  },
-  {
-    "day": "WED",
-    "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
-  },
-  {
-    "day": "THURS",
-    "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
-  },
-  {
-    "day": "FRI",
-    "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
-  },
-  {
-    "day": "SAT",
-    "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
-  },
-  {
+    "key": 0,
     "day": "SUN",
     "dishes": [
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2"],
-      ["Dish1", "Dish2", "Dish3"],
-      ["Dish1", "Dish2", "Dish3"]
-    ]
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish267656", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3", "Dish4"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Sunday"
+  },
+  {
+    "key": 1,
+    "day": "MON",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": ["Chole", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Pakora", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Monday"
+  },
+  {
+    "key": 2,
+    "day": "TUE",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": ["Puri", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dal", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Tuesday"
+  },
+  {
+    "key": 3,
+    "day": "WED",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": ["Idli", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Wednesday"
+  },
+  {
+    "key": 4,
+    "day": "THURS",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": ["Dosa", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Thursday"
+  },
+  {
+    "key": 5,
+    "day": "FRI",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Friday"
+  },
+  {
+    "key": 6,
+    "day": "SAT",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3"] },
+      {
+        "time": "Snacks",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      },
+      {
+        "time": "Dinner",
+        "meals": ["Dish1", "Dish2", "Dish3"]
+      }
+    ],
+    "title": "Saturday"
   }
 ]
