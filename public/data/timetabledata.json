@@ -7,7 +7,8 @@
         "time": "Breakfast",
         "meals": ["Dish1", "Dish267656", "Dish3"]
       },
-      { "time": "Lunch", "meals": ["Dish1", "Dish2", "Dish3", "Dish4"] },
+      { "time": "Lunch",
+       "meals": ["Dish1", "Dish2", "Dish3", "Dish4"] },
       {
         "time": "Snacks",
         "meals": ["Dish1", "Dish2", "Dish3"]
@@ -17,10 +18,7 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "title": "Sunday",
-    "dish": "Dish 1",
-    "type": "Non-Veg",
-    "series": [48.8, 24.3, 14.6, 12.3]
+    "title": "Sunday"
   },
   {
     "key": 1,
@@ -40,10 +38,7 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "title": "Monday",
-    "dish": "Dish 2",
-    "type": "Non-Veg",
-    "series": [55, 20.3, 34.6, 5.3]
+    "title": "Monday"
   },
   {
     "key": 2,
@@ -63,10 +58,7 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "title": "Tuesday",
-    "dish": "Dish 3",
-    "type": "Veg",
-    "series": [70.8, 4.3, 14.6, 12.3]
+    "title": "Tuesday"
   },
   {
     "key": 3,
@@ -86,10 +78,7 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "title": "Wednesday",
-    "dish": "Dish 4",
-    "type": "Non-Veg",
-    "series": [48.8, 24.3, 21.6, 12.3]
+    "title": "Wednesday"
   },
   {
     "key": 4,
@@ -109,10 +98,7 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "title": "Thursday",
-    "dish": "Dish 5",
-    "type": "Veg",
-    "series": [48.8, 20.3, 10.6, 12.3]
+    "title": "Thursday"
   },
   {
     "key": 5,
@@ -132,10 +118,7 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "title": "Friday",
-    "dish": "Dish 6",
-    "type": "Non-Veg",
-    "series": [48.8, 34.3, 14.6, 12.3]
+    "title": "Friday"
   },
   {
     "key": 6,
@@ -155,9 +138,6 @@
         "meals": ["Dish1", "Dish2", "Dish3"]
       }
     ],
-    "title": "Saturday",
-    "dish": "Dish 7",
-    "type": "Non-Veg",
-    "series": [48.8, 24.3, 10.6, 12.3]
+    "title": "Saturday"
   }
 ]

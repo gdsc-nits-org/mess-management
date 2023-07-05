@@ -1,0 +1,205 @@
+[
+    {
+        "key": 0,
+        "title": "Sunday",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24.3, 14.6, 18.3]
+      },
+      { "time": "Lunch",
+       "meals": "Dish1",
+       "type":"Non-Veg",
+       "series": [49.8, 14.3, 14.6, 12.3]
+    },
+      {
+        "time": "Snacks",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24, 14.6, 12.3]
+      },
+      {
+        "time": "Dinner",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24.3, 14.6, 12.3]
+      }
+    ]
+    },
+    {
+        "key": 1,
+        "title": "Monday",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": "Dis",
+        "type":"Non-Veg",
+        "series": [48.8, 24.3, 4.6, 18.3]
+      },
+      { "time": "Lunch",
+       "meals": "Dsh1",
+       "type":"Veg",
+       "series": [4.8, 14.3, 14.6, 12.3]
+    },
+      {
+        "time": "Snacks",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [4.8, 24, 14.6, 12.3]
+      },
+      {
+        "time": "Dinner",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24.3, 14.6, 12.3]
+      }
+    ]
+    
+    },
+    {
+        "key": 2,
+        "title": "Tuesday",
+        "dishes": [
+          {
+            "time": "Breakfast",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24.3, 14.6, 18.3]
+          },
+          { "time": "Lunch",
+           "meals": "Dish1",
+           "type":"Non-Veg",
+           "series": [49.8, 14.3, 14.6, 12.3]
+        },
+          {
+            "time": "Snacks",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24, 14.6, 12.3]
+          },
+          {
+            "time": "Dinner",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24.3, 14.6, 12.3]
+          }
+        ]
+    },
+    {
+        "key": 3,
+        "title": "Wednesday",
+        "dishes": [
+          {
+            "time": "Breakfast",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24.3, 14.6, 18.3]
+          },
+          { "time": "Lunch",
+           "meals": "Dish1",
+           "type":"Non-Veg",
+           "series": [49.8, 14.3, 14.6, 12.3]
+        },
+          {
+            "time": "Snacks",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24, 14.6, 12.3]
+          },
+          {
+            "time": "Dinner",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24.3, 14.6, 12.3]
+          }
+        ]
+    },
+    {
+        "key": 4,
+        "title": "Thursday",
+        "dishes": [
+          {
+            "time": "Breakfast",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24.3, 14.6, 18.3]
+          },
+          { "time": "Lunch",
+           "meals": "Dish1",
+           "type":"Non-Veg",
+           "series": [49.8, 14.3, 14.6, 12.3]
+        },
+          {
+            "time": "Snacks",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24, 14.6, 12.3]
+          },
+          {
+            "time": "Dinner",
+            "meals": "Dish1",
+            "type":"Non-Veg",
+            "series": [48.8, 24.3, 14.6, 12.3]
+          }
+        ]
+    },
+    {"key": 5,
+    "title": "Friday",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": "Dish1",
+        "type":"Veg",
+        "series": [24.8, 44.3, 14.6, 18.3]
+      },
+      { "time": "Lunch",
+       "meals": "Dish1",
+       "type":"Non-Veg",
+       "series": [49.8, 14.3, 14.6, 12.3]
+    },
+      {
+        "time": "Snacks",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24, 14.6, 12.3]
+      },
+      {
+        "time": "Dinner",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24.3, 14.6, 12.3]
+      }
+    ]
+    },
+    {"key": 5,
+    "title": "Saturday",
+    "dishes": [
+      {
+        "time": "Breakfast",
+        "meals": "Dish1",
+        "type":"Veg",
+        "series": [48.8, 24.3, 14.6, 18.3]
+      },
+      { "time": "Lunch",
+       "meals": "Dish1",
+       "type":"Non-Veg",
+       "series": [49.8, 14.3, 14.6, 12.3]
+    },
+      {
+        "time": "Snacks",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24, 14.6, 12.3]
+      },
+      {
+        "time": "Dinner",
+        "meals": "Dish1",
+        "type":"Non-Veg",
+        "series": [48.8, 24.3, 14.6, 12.3]
+      }
+    ]
+    }
+  ]
+  

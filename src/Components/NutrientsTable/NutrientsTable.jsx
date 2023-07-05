@@ -5,15 +5,13 @@ import { RiAlignLeft, RiLoader2Fill } from "react-icons/ri";
 import Donut from "../DonutChart/DonutChart";
 import style from "./NutrientsTable.module.scss";
 
-const NutrientTable = (props) => {
-  const { box } = props;
-
+const NutrientTable = ({ index, box }) => {
   return (
     <div className={style.table}>
       <div className={style.tableHeader}>
         <div className={style.tableSection1}>
           <MdOutlineCalendarToday />
-          <div className={style.text}>Day</div>
+          <div className={style.text}>Time</div>
         </div>
         <div className={style.tableSection2}>
           <RiAlignLeft />
@@ -29,11 +27,11 @@ const NutrientTable = (props) => {
         </div>
       </div>
 
-      {box.map((bx) => (
+      {box[index]?.dishes.map((bx) => (
         <div className={style.tableContent}>
           <div className={style.tableSection}>
-            <div className={style.tableSection1}>{bx.day}</div>
-            <div className={style.tableSection2}>{bx.dish}</div>
+            <div className={style.tableSection1}>{bx.time}</div>
+            <div className={style.tableSection2}>{bx.meals}</div>
             <div className={style.tableSection3}>
               <span
                 style={{

@@ -39,3 +39,21 @@
     border-radius: 5%;
   }
 }
+
+@media screen and (min-width: 700px) {
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 94%;
+    font-size: 0.5rem;
+    .optbtn {
+      width: 109px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    button {
+      width: 20%;
+    }
+  }
+}
